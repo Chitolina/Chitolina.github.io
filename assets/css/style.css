@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #075094;
+  color: #1a6864;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0.5;
   right: 15px;
   bottom: 15px;
   z-index: 996;
@@ -1026,7 +1026,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: #f18ef5;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1038,7 +1038,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: #f183d6;
   color: #fff;
   text-decoration: none;
 }
