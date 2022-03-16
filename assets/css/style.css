@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #hero .social-links a:hover {
-  color: #5f3c0f;
+  color: #fc4f88;
 }
 @media (max-width: 992px) {
   #hero {
@@ -452,7 +452,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #5f3c0f;
+  background-color: #fc4f88;
 }
 
 /*--------------------------------------------------------------
@@ -1029,7 +1029,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5f3c0f;
+  background: #fc4f88;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1041,7 +1041,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #5f3c0f;
+  background: #fc4f88;
   color: #fff;
   text-decoration: none;
 }
