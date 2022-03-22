@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #1a6864;
+  color: #261a68;
   text-decoration: none;
 }
 
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #hero p span {
-  color: #11b6ae;
+  color: #2795df;
   letter-spacing: 1px;
 }
 #hero .social-links {
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #11b6ae;;
+  color: #2795df;;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
