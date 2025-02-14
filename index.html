@@ -573,319 +573,171 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-const content = {
-  en: {
-    // Seções Principais
-    titles: {
-      home: "Home",
-      about: "About",
-      resume: "Resume",
-      portfolio: "Portfolio",
-      services: "Services",
-      contact: "Contact"
-    },
-
-    // Hero Section
-    hero: {
-      title: "Lucas Chitolina",
-      description: "I'm a <span class='typed' data-typed-items='Data Analyst, Molecular Biologist, Learner'></span>"
-    },
-
-    // About Section
-    about: {
-      title: "About",
-      description: "I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. My academic background focuses on bioinformatics, utilizing Python and Shell Script (Linux) for research. This experience sparked my interest in data analysis, leading me to develop skills through certifications and hands-on projects.",
-      role: "Data Analyst & Molecular Biologist",
-      text: "Passionate about learning and its possibilities. While biology once defined me, a disillusionment with academia led me to expand into data analysis. Now I immerse myself in programming languages, projects, and building an exciting portfolio.",
-      details: {
-        birthday: "Birthday",
-        phone: "Phone",
-        city: "City",
-        age: "Age",
-        degree: "Degree",
-        email: "E-mail"
+    const content = {
+      en: {
+        heroTitle: "Lucas Chitolina",
+        heroDescription: "I'm a <span class='typed' data-typed-items='Data Analyst, Molecular Biologist, Learner'></span>",
+        aboutSectionTitle: "About",
+        aboutDescription: "I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects.",
+        aboutRole: "Data Analyst & Molecular Biologist",
+        aboutText: "I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio.",
+        birthday: "Birthday:",
+        birthdayValue: "08 Aug 1991",
+        phone: "Phone:",
+        phoneValue: "55 (51) 996052171",
+        city: "City:",
+        cityValue: "Porto Alegre-RS, BR",
+        age: "Age:",
+        ageValue: "33",
+        degree: "Degree:",
+        degreeValue: "MSc. Molecular Biology",
+        email: "E-mail:",
+        emailValue: "lucas.chitolina@egmail.com",
+        skillsTitle: "Skills",
+        skillsDescription: "Below you can see a rank of my main technical/hard skills",
+        resumeSectionTitle: "Resume",
+        resumeDescription: "",
+        resumeSummaryTitle: "Sumary",
+        resumeSummaryText: "Disciplined and self-sufficient professional, able to solve problems based on analysis and self-learning. I show ease in interpersonal relationships, passion for transmitting information in a creative and structured way, and I am in continuous improvement in the study of data manipulation and programming tools.",
+        resumeEducationTitle: "Education",
+        resumeEducationDescription1: "Methodological application with Shell Script and data analysis through graphical and statistical approach, using Python language and SPSS software, respectively. Dissertation: 'In silico study, by classical molecular dynamics, of the tertiary structure of the enzyme MtInhA (EC 1.3.1.9) from Mycobacterium tuberculosis under quaternary structure constraints'.",
+        resumeEducationDescription2: "A Bachelor of Biological Sciences teaches you how living organisms grow, reproduce, adapt and evolve; how life organizes in a chemical, phisiological and ecological way. You understand how species and ecological communities can be managed, conserved and restored, using techniques ranging from genetic analysis to data collection from whole populations and ecosystems, to big data synthesis science.",
+        resumeExperienceTitle: "Professional Experience",
+        resumeExperienceDescription1: "Handling data, automating routines, and analyzing the company’s health indicators. Well-versed in tools such as Python, SQL, Excel, and others.",
+        resumeExperienceItem1: "Automation of routines using Python, VBA, and SQL;",
+        resumeExperienceItem2: "Analysis of key performance indicators to support strategic decision-making;",
+        resumeExperienceItem3: "Development of internal tools to optimize operational processes.",
+        resumeExperienceDescription2: "Summarized period in aid of field trips, analysis and curation of models collected for the museum's collection, practice in the use of dichotomic key, and genetic sequence analysis through the 'Sequencher' software.",
+        resumeExperienceItem4: "Tipping of specimens, sorting and separation of collected material;",
+        resumeExperienceItem5: "Taxonomic and genetic analysis;",
+        resumeExperienceItem6: "Assistance in field research.",
+        resumeExperienceDescription3: "The main activities at the Herbarium were to exercise the correct curation of specimens, taxonomic classification with a dichotomic key at species level, filling in the museum's database worksheet and preparing didactic material aimed to the public.",
+        resumeExperienceItem7: "Application of assembly, registration and insertion of exsiccates;",
+        resumeExperienceItem8: "Updating the collection registration database;",
+        resumeExperienceItem9: "Educational dynamics.",
+        resumeExperienceDescription4: "Collection and characterization of suctorian ciliates in freshwater lakes of Rio Grande do Sul; the presence of these organisms serve as a bioindicator of a eutrophic aquatic environment. It involved the presentation of scientific initiation seminars, preparation of grant summaries to CNPQ, and assistance to laboratory students.",
+        downloadResume: "Download resume",
+        certificatesLink: "Certificates",
+        portfolioSectionTitle: "Portfolio",
+        portfolioDescription: "Welcome to my portfolio site. I appreciate your time coming by and I'm always open to positive feedbacks and new tips/suggestions!",
+        portfolioFilterAll: "All",
+        portfolioFilterDataAnalysis: "Data Analysis",
+        portfolioItem1Title: "Mini project",
+        portfolioItem1Description: "Exploratory Analysis (EDA) and Data Manipulation: Dino dataset",
+        portfolioItem2Title: "Mini project",
+        portfolioItem2Description: "Web Scraping/Dashboard/Graphs",
+        portfolioItem3Title: "Mini project",
+        portfolioItem3Description: "IMDB Exploratory Analysis (Python & SQL)",
+        portfolioItem4Title: "Mini project",
+        portfolioItem4Description: "Natural Language Processing",
+        portfolioItem5Title: "Mini project",
+        portfolioItem5Description: "Natural Language Processing with Disaster Tweets",
+        servicesSectionTitle: "Services & Tools",
+        service1Title: "Dashboard & Data Visualization",
+        service1Description: "Excel and/or Power Bi, merged with a good Story telling, are able to act like a book or a map filled with dynamic charts with the purpose of reaching the best understanding of our data.",
+        service2Title: "Descriptive Analysis",
+        service2Description: "Describing or summarizing a set of data. It is popular for its ability to generate accessible insights from otherwise uninterpreted data. It draws insights solely from past data, by manipulating in ways that make it more meaningful.",
+        service3Title: "Diagnostic Analysis",
+        service3Description: "Using the insights found from descriptive analytics to find the causes of outcomes. It creates more connections between data and identifies patterns of behavior.",
+        service4Title: "Prescriptive Analysis",
+        service4Description: "Analyzing data and providing instant recommendations on how to optimize business practices to suit multiple predicted outcomes. It takes the “what we know” (data), comprehensively understands that data to predict what could happen, and suggests the best steps forward based on informed simulations.",
+        service5Title: "Geospatial Analysis",
+        service5Description: "Through QGIS and Geospatial knowledge it is possible to visualize, manage, edit, analyze data, and compose printable maps useful for reports.",
+        service6Title: "Bioinformatics",
+        service6Description: "Applying tools of computation and analysis to the capture and interpretation of biological data.",
+        contactSectionTitle: "Contact",
+        contactLocationTitle: "Location:",
+        contactLocation: "João Telles, Bom Fim, Porto Alegre-RS",
+        contactEmailTitle: "Email:",
+        contactEmail: "lucas.chitolina@edu.pucrs.br",
+        contactPhoneTitle: "Call:",
+        contactPhone: "55 (51) 996052171",
+        footerTitle: "Lucas Chitolina",
+        footerQuote: "Fear is a powerful drug, overcome it and you think that you can do anything! ― Björk"
       },
-      values: {
-        birthday: "08 Aug 1991",
-        phone: "+55 (51) 99605-2171",
-        city: "Porto Alegre-RS, BR",
-        age: "33",
-        degree: "MSc Molecular Biology",
-        email: "lucas.chitolina@gmail.com"
+      pt: {
+        heroTitle: "Lucas Chitolina",
+        heroDescription: " <span class='typed' data-typed-items='Analista de dados, Pesquisador, Aprendiz'></span>",
+        aboutSectionTitle: "Sobre",
+        aboutDescription: "Analista de Dados, bacharel em Ciências Biológicas e Mestrado em Biologia Molecular pela PUCRS. Minha formação acadêmica tem foco em bioinformática, onde utilizei Python e Shell Script (Linux) para minha pesquisa. Essa experiência despertou meu interesse pela área de análise de dados, levando-me a desenvolver ainda mais minhas habilidades através de certificações e projetos práticos.",
+        aboutRole: "Analista de Dados & Pesquisador",
+        aboutText: "Sou apaixonado por aprender e pelas possibilidades que isso me traz. Por muito tempo, acreditei que a biologia fosse o único nicho ao qual eu tinha afeição. Porém, depois de passar por uma grande decepção com a área acadêmica, percebi que não cresceria se ficasse preso a somente pesquisar nesta área. Hoje, estou me aprofundando na análise de dados, explorando diferentes ferranentas, criando projetos e construindo um portfólio legal.",
+        birthday: "Data de Nascimento:",
+        birthdayValue: "08 Ago 1991",
+        phone: "Telefone:",
+        phoneValue: "55 (51) 996052171",
+        city: "Cidade:",
+        cityValue: "Porto Alegre-RS, BR",
+        age: "Idade:",
+        ageValue: "33",
+        degree: "Formação:",
+        degreeValue: "Mestrado em Biologia Molecular",
+        email: "E-mail:",
+        emailValue: "lucas.chitolina@egmail.com",
+        skillsTitle: "Habilidades",
+        skillsDescription: "Abaixo você pode ver um ranking das minhas principais habilidades técnicas/hard skills",
+        resumeSectionTitle: "Currículo",
+        resumeDescription: "",
+        resumeSummaryTitle: "Resumo",
+        resumeSummaryText: "Profissional disciplinado e autossuficiente, capaz de resolver problemas com base em análise e autoaprendizado. Demonstro facilidade em relacionamentos interpessoais, paixão por transmitir informações de forma criativa e estruturada, e estou em constante aprimoramento no estudo de ferramentas de manipulação de dados e programação.",
+        resumeEducationTitle: "Educação",
+        resumeEducationDescription1: "Aplicação metodológica com Shell Script e análise de dados por meio de abordagem gráfica e estatística, utilizando a linguagem Python e o software SPSS, respectivamente. Dissertação: 'Estudo in silico, por dinâmica molecular clássica, da estrutura terciária da enzima MtInhA (EC 1.3.1.9) de Mycobacterium tuberculosis sob restrições de estrutura quaternária'.",
+        resumeEducationDescription2: "Um Bacharel em Ciências Biológicas ensina como os organismos vivos crescem, se reproduzem, se adaptam e evoluem; como a vida se organiza de forma química, fisiológica e ecológica. Você entende como espécies e comunidades ecológicas podem ser gerenciadas, conservadas e restauradas, usando técnicas que variam desde análise genética até coleta de dados de populações e ecossistemas inteiros, até ciência de síntese de big data.",
+        resumeExperienceTitle: "Experiência Profissional",
+        resumeExperienceDescription1: "Manipulação de dados, automação de rotinas e análise dos indicadores de saúde da empresa. Familiarizado com ferramentas como Python, SQL, Excel e outras.",
+        resumeExperienceItem1: "Automação de rotinas usando Python, VBA e SQL;",
+        resumeExperienceItem2: "Análise de indicadores-chave de desempenho para apoiar a tomada de decisões estratégicas;",
+        resumeExperienceItem3: "Desenvolvimento de ferramentas internas para otimizar processos operacionais.",
+        resumeExperienceDescription2: "Período resumido em auxílio a saídas de campo, análise e curadoria de modelos coletados para o acervo do museu, prática no uso de chave dicotômica e análise de sequências genéticas por meio do software 'Sequencher'.",
+        resumeExperienceItem4: "Inclusão de espécimes, triagem e separação de material coletado;",
+        resumeExperienceItem5: "Análise taxonômica e genética;",
+        resumeExperienceItem6: "Auxílio em pesquisas de campo.",
+        resumeExperienceDescription3: "As principais atividades no Herbário foram exercer a curadoria correta de espécimes, classificação taxonômica com chave dicotômica em nível de espécie, preenchimento da planilha de banco de dados do museu e preparação de material didático voltado ao público.",
+        resumeExperienceItem7: "Aplicação de montagem, registro e inserção de exsicatas;",
+        resumeExperienceItem8: "Atualização do banco de dados de registro da coleção;",
+        resumeExperienceItem9: "Dinâmicas educacionais.",
+        resumeExperienceDescription4: "Coleta e caracterização de ciliados suctórios em lagos de água doce do Rio Grande do Sul; a presença desses organismos serve como bioindicador de um ambiente aquático eutrófico. Envolveu a apresentação de seminários de iniciação científica, preparação de resumos de bolsas para o CNPQ e auxílio a alunos do laboratório.",
+        downloadResume: "Baixar currículo",
+        certificatesLink: "Certificados",
+        portfolioSectionTitle: "Portfólio",
+        portfolioDescription: "Bem-vindo ao meu site de portfólio. Agradeço o seu tempo aqui e estou sempre aberto a feedbacks positivos e novas dicas/sugestões!",
+        portfolioFilterAll: "Todos",
+        portfolioFilterDataAnalysis: "Análise de Dados",
+        portfolioItem1Title: "Mini projeto",
+        portfolioItem1Description: "Análise Exploratória (EDA) e Manipulação de Dados: Conjunto de dados Dino",
+        portfolioItem2Title: "Mini projeto",
+        portfolioItem2Description: "Web Scraping/Dashboard/Gráficos",
+        portfolioItem3Title: "Mini projeto",
+        portfolioItem3Description: "Análise Exploratória do IMDB (Python & SQL)",
+        portfolioItem4Title: "Mini projeto",
+        portfolioItem4Description: "Processamento de Linguagem Natural",
+        portfolioItem5Title: "Mini projeto",
+        portfolioItem5Description: "Processamento de Linguagem Natural com Tweets de Desastres",
+        servicesSectionTitle: "Serviços & Ferramentas",
+        service1Title: "Dashboard & Visualização de Dados",
+        service1Description: "Excel e/ou Power Bi, combinados com uma boa narrativa, são capazes de atuar como um livro ou um mapa repleto de gráficos dinâmicos com o objetivo de alcançar a melhor compreensão dos nossos dados.",
+        service2Title: "Análise Descritiva",
+        service2Description: "Descrever ou resumir um conjunto de dados. É popular por sua capacidade de gerar insights acessíveis a partir de dados não interpretados. Extrai insights exclusivamente de dados passados, manipulando-os de maneiras que os tornam mais significativos.",
+        service3Title: "Análise Diagnóstica",
+        service3Description: "Usando os insights encontrados na análise descritiva para encontrar as causas dos resultados. Cria mais conexões entre os dados e identifica padrões de comportamento.",
+        service4Title: "Análise Preditiva",
+        service4Description: "Analisando dados e fornecendo recomendações instantâneas sobre como otimizar práticas de negócios para atender a múltiplos resultados previstos. Ele pega o 'que sabemos' (dados), compreende esses dados para prever o que poderia acontecer e sugere os melhores passos a seguir com base em simulações informadas.",
+        service5Title: "Análise Geoespacial",
+        service5Description: "Através do QGIS e do conhecimento geoespacial, é possível visualizar, gerenciar, editar, analisar dados e compor mapas imprimíveis úteis para relatórios.",
+        service6Title: "Bioinformática",
+        service6Description: "Aplicando ferramentas de computação e análise para a captura e interpretação de dados biológicos.",
+        contactSectionTitle: "Contato",
+        contactLocationTitle: "Localização:",
+        contactLocation: "João Telles, Bom Fim, Porto Alegre-RS",
+        contactEmailTitle: "E-mail:",
+        contactEmail: "lucas.chitolina@edu.pucrs.br",
+        contactPhoneTitle: "Telefone:",
+        contactPhone: "55 (51) 996052171",
+        footerTitle: "Lucas Chitolina",
+        footerQuote: "O medo é uma droga poderosa, supere-o e você pensará que pode fazer qualquer coisa! ― Björk"
       }
-    },
+    };
 
-    // Skills Section
-    skills: {
-      title: "Skills",
-      description: "Technical proficiency ranking:",
-      items: {
-        gis: "GIS",
-        git: "Git/GitHub",
-        office: "Office Suite",
-        powerbi: "Power BI",
-        python: "Python",
-        shell: "Shell Script",
-        sql: "SQL",
-        cloud: "Cloud"
-      }
-    },
-
-    // Resume Section
-    resume: {
-      title: "Resume",
-      summary: {
-        title: "Summary",
-        text: "Disciplined problem-solver with strong analytical skills. Effective communicator passionate about transforming data into actionable insights through innovative tools and continuous learning."
-      },
-      education: {
-        title: "Education",
-        items: [
-          {
-            degree: "MSc Molecular Biology",
-            period: "2019-2021",
-            institution: "PUCRS",
-            description: "Applied Shell Script and Python for molecular dynamics studies of Mycobacterium tuberculosis enzymes."
-          },
-          {
-            degree: "BSc Biological Sciences",
-            period: "2012-2017",
-            institution: "PUCRS",
-            description: "Comprehensive training in biological systems analysis and ecological data interpretation."
-          }
-        ]
-      },
-      experience: {
-        title: "Professional Experience",
-        items: [
-          {
-            position: "Data Analyst",
-            period: "2022-Present",
-            company: "Quero-Quero Corp",
-            description: "Data handling and process automation using Python, SQL, and Power BI. Key responsibilities:",
-            points: [
-              "Workflow automation",
-              "KPI analysis",
-              "Tool development"
-            ]
-          },
-          // Outras experiências...
-        ]
-      },
-      buttons: {
-        resume: "Download Resume",
-        certificates: "Certificates"
-      }
-    },
-
-    // Portfolio Section
-    portfolio: {
-      title: "Portfolio",
-      description: "Explore my data analysis projects - feedback and suggestions welcome!",
-      filters: {
-        all: "All",
-        data: "Data Analysis"
-      },
-      projects: [
-        {
-          title: "Dino Dataset EDA",
-          description: "Exploratory Data Analysis with Python Pandas"
-        },
-        // Outros projetos...
-      ]
-    },
-
-    // Services Section
-    services: {
-      title: "Services & Tools",
-      items: [
-        {
-          title: "Data Visualization",
-          description: "Creating interactive dashboards with Power BI and Excel for actionable insights."
-        },
-        // Outros serviços...
-      ]
-    },
-
-    // Contact Section
-    contact: {
-      title: "Contact",
-      info: {
-        location: "Location",
-        email: "Email",
-        phone: "Phone"
-      },
-      form: {
-        name: "Your Name",
-        email: "Your Email",
-        subject: "Subject",
-        message: "Message",
-        submit: "Send Message"
-      }
-    },
-
-    // Footer
-    footer: {
-      quote: "\"Fear is a powerful drug, overcome it and you think you can do anything!\" ― Björk"
-    }
-  },
-
-  pt: {
-    // Seções Principais
-    titles: {
-      home: "Início",
-      about: "Sobre",
-      resume: "Currículo",
-      portfolio: "Portfólio",
-      services: "Serviços",
-      contact: "Contato"
-    },
-
-    // Hero Section
-    hero: {
-      title: "Lucas Chitolina",
-      description: "Sou <span class='typed' data-typed-items='Analista de Dados, Biólogo Molecular, Autodidata'></span>"
-    },
-
-    // About Section
-    about: {
-      title: "Sobre",
-      description: "Analista de Dados com Bacharelado em Ciências Biológicas e Mestrado em Biologia Molecular pela PUCRS. Atuei em bioinformática utilizando Python e Shell Script (Linux), experiência que despertou meu interesse em análise de dados, desenvolvendo habilidades através de certificações e projetos práticos.",
-      role: "Analista de Dados & Biólogo Molecular",
-      text: "Apaixonado por aprendizagem contínua. Após desilusão com a academia, redirecionei minha carreira para análise de dados, explorando linguagens de programação e construindo um portfólio diversificado.",
-      details: {
-        birthday: "Nascimento",
-        phone: "Telefone",
-        city: "Cidade",
-        age: "Idade",
-        degree: "Formação",
-        email: "E-mail"
-      },
-      values: {
-        birthday: "08 Ago 1991",
-        phone: "+55 (51) 99605-2171",
-        city: "Porto Alegre-RS, BR",
-        age: "33",
-        degree: "Mestrado em Biologia Molecular",
-        email: "lucas.chitolina@gmail.com"
-      }
-    },
-
-    // Skills Section
-    skills: {
-      title: "Habilidades",
-      description: "Classificação de proficiência técnica:",
-      items: {
-        gis: "SIG",
-        git: "Git/GitHub",
-        office: "Pacote Office",
-        powerbi: "Power BI",
-        python: "Python",
-        shell: "Shell Script",
-        sql: "SQL",
-        cloud: "Cloud"
-      }
-    },
-
-    // Resume Section
-    resume: {
-      title: "Currículo",
-      summary: {
-        title: "Resumo",
-        text: "Profissional metódico com habilidades analíticas comprovadas. Comunicador eficaz apaixonado por transformar dados em insights acionáveis através de ferramentas inovadoras e aprendizado contínuo."
-      },
-      education: {
-        title: "Formação",
-        items: [
-          {
-            degree: "Mestrado em Biologia Molecular",
-            period: "2019-2021",
-            institution: "PUCRS",
-            description: "Aplicação de Shell Script e Python em estudos de dinâmica molecular de enzimas de Mycobacterium tuberculosis."
-          },
-          {
-            degree: "Bacharelado em Ciências Biológicas",
-            period: "2012-2017",
-            institution: "PUCRS",
-            description: "Formação abrangente em análise de sistemas biológicos e interpretação de dados ecológicos."
-          }
-        ]
-      },
-      experience: {
-        title: "Experiência Profissional",
-        items: [
-          {
-            position: "Analista de Dados",
-            period: "2022-Atual",
-            company: "Quero-Quero Corp",
-            description: "Manipulação de dados e automação de processos usando Python, SQL e Power BI. Principais atividades:",
-            points: [
-              "Automação de fluxos de trabalho",
-              "Análise de KPIs",
-              "Desenvolvimento de ferramentas"
-            ]
-          },
-          // Outras experiências...
-        ]
-      },
-      buttons: {
-        resume: "Baixar CV",
-        certificates: "Certificados"
-      }
-    },
-
-    // Portfolio Section
-    portfolio: {
-      title: "Portfólio",
-      description: "Explore meus projetos de análise de dados - feedbacks e sugestões são bem-vindos!",
-      filters: {
-        all: "Todos",
-        data: "Análise de Dados"
-      },
-      projects: [
-        {
-          title: "Análise Exploratória de Dados (Dino)",
-          description: "Exploração de dados com Python Pandas"
-        },
-        // Outros projetos...
-      ]
-    },
-
-    // Services Section
-    services: {
-      title: "Serviços & Ferramentas",
-      items: [
-        {
-          title: "Visualização de Dados",
-          description: "Criação de dashboards interativos com Power BI e Excel para insights acionáveis."
-        },
-        // Outros serviços...
-      ]
-    },
-
-    // Contact Section
-    contact: {
-      title: "Contato",
-      info: {
-        location: "Localização",
-        email: "E-mail",
-        phone: "Telefone"
-      },
-      form: {
-        name: "Seu Nome",
-        email: "Seu E-mail",
-        subject: "Assunto",
-        message: "Mensagem",
-        submit: "Enviar Mensagem"
-      }
-    },
-
-    // Footer
-    footer: {
-      quote: "\"O medo é uma droga poderosa, supere-o e você pensará que pode fazer qualquer coisa!\" ― Björk"
-    }
-  }
-};
     function changeLanguage() {
       const language = document.getElementById('language-selector').value;
       const selectedContent = content[language];
