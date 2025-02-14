@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -27,31 +26,30 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.7.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
+    <div class="language-selector">
+      <select id="language-selector" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+      </select>
+    </div>
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span id="home-title">Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span id="about-title">About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span id="resume-title">Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span id="portfolio-title">Portfolio</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span id="services-title">Services</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span id="contact-title">Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -60,8 +58,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Lucas Chitolina</h1>
-      <p>I'm a <span class="typed" data-typed-items="Data Analyst, Molecular Biologist, Learner"></span></p>
+      <h1 id="hero-title">Lucas Chitolina</h1>
+      <p id="hero-description">I'm a <span class="typed" data-typed-items="Data Analyst, Molecular Biologist, Learner"></span></p>
       <div class="social-links">
         <a href="https://github.com/Chitolina" class="github"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/lucas-chitolina/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -76,40 +74,32 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
-          <p>I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. 
-            My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. 
-            This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects. 
-            I have built a comprehensive skill set that includes abilities in GIS, Git, Microsoft Office, Power BI, Python, Shell Script, SQL, and more. 
-            I am committed to continuously enhancing my expertise and applying it to drive data-driven insights.
+          <h2 id="about-section-title">About</h2>
+          <p id="about-description">I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects.</p>
         </div>
-
 
         <div class="row">
           <div class="col-lg-4">
             <img src="assets/img/eu1.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Data Analyst &amp; Molecular Biologist</h3>
-            <p>
-              I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. 
-              However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. 
-              Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio. 
-              Now, I can clearly see a future ahead, and it’s full of possibilities!
+            <h3 id="about-role">Data Analyst &amp; Molecular Biologist</h3>
+            <p id="about-text">
+              I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>08 Aug 1991</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>55 (51) 996052171</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Porto Alegre-RS, BR</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="birthday">Birthday:</strong> <span id="birthday-value">08 Aug 1991</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="phone">Phone:</strong> <span id="phone-value">55 (51) 996052171</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="city">City:</strong> <span id="city-value">Porto Alegre-RS, BR</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>33</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MSc. Molecular Biology</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>lucas.chitolina@egmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="age">Age:</strong> <span id="age-value">33</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="degree">Degree:</strong> <span id="degree-value">MSc. Molecular Biology</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="email">E-mail:</strong> <span id="email-value">lucas.chitolina@egmail.com</span></li>
                 </ul>
               </div>
             </div>
@@ -118,6 +108,82 @@
 
       </div>
     </section><!-- End About Section -->
+
+  </main>
+
+  <script>
+    const content = {
+      en: {
+        heroTitle: "Lucas Chitolina",
+        heroDescription: "I'm a <span class='typed' data-typed-items='Data Analyst, Molecular Biologist, Learner'></span>",
+        aboutSectionTitle: "About",
+        aboutDescription: "I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects.",
+        aboutRole: "Data Analyst & Molecular Biologist",
+        aboutText: "I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio.",
+        birthday: "Birthday:",
+        birthdayValue: "08 Aug 1991",
+        phone: "Phone:",
+        phoneValue: "55 (51) 996052171",
+        city: "City:",
+        cityValue: "Porto Alegre-RS, BR",
+        age: "Age:",
+        ageValue: "33",
+        degree: "Degree:",
+        degreeValue: "MSc. Molecular Biology",
+        email: "E-mail:",
+        emailValue: "lucas.chitolina@egmail.com"
+      },
+      pt: {
+        heroTitle: "Lucas Chitolina",
+        heroDescription: "Sou um Analista de Dados com bacharelado em Ciências Biológicas e mestrado em Biologia Molecular pela PUCRS. Meu histórico acadêmico tem um forte foco em bioinformática, onde utilizei Python e Shell Script (Linux) para minha pesquisa. Essa experiência despertou meu interesse pela análise de dados, levando-me a desenvolver ainda mais minhas habilidades através de certificações e projetos práticos.",
+        aboutSectionTitle: "Sobre",
+        aboutDescription: "Sou um Analista de Dados com Bacharelado em Ciências Biológicas e Mestrado em Biologia Molecular pela PUCRS. Minha formação acadêmica tem um foco forte em bioinformática, onde utilizei Python e Shell Script (Linux) para minha pesquisa. Essa experiência despertou meu interesse pela área de análise de dados, levando-me a desenvolver ainda mais minhas habilidades através de certificações e projetos práticos.",
+        aboutRole: "Analista de Dados & Biologista Molecular",
+        aboutText: "Sou apaixonado por aprender e pelas infinitas possibilidades que isso traz. Por muito tempo, acreditei que a biologia fosse a única coisa que me definia. Porém, depois de passar por uma grande decepção com a área acadêmica, percebi que não cresceria se ficasse preso a esse nicho. Hoje, estou me aprofundando na análise de dados, explorando diferentes linguagens de programação, criando projetos e construindo um portfólio empolgante.",
+        birthday: "Data de Nascimento:",
+        birthdayValue: "08 Ago 1991",
+        phone: "Telefone:",
+        phoneValue: "55 (51) 996052171",
+        city: "Cidade:",
+        cityValue: "Porto Alegre-RS, BR",
+        age: "Idade:",
+        ageValue: "33",
+        degree: "Formação:",
+        degreeValue: "Mestrado em Biologia Molecular",
+        email: "E-mail:",
+        emailValue: "lucas.chitolina@egmail.com"
+      }
+    };
+
+    function changeLanguage() {
+      const language = document.getElementById('language-selector').value;
+      const selectedContent = content[language];
+
+      document.getElementById('hero-title').innerHTML = selectedContent.heroTitle;
+      document.getElementById('hero-description').innerHTML = selectedContent.heroDescription;
+      document.getElementById('about-section-title').innerHTML = selectedContent.aboutSectionTitle;
+      document.getElementById('about-description').innerHTML = selectedContent.aboutDescription;
+      document.getElementById('about-role').innerHTML = selectedContent.aboutRole;
+      document.getElementById('about-text').innerHTML = selectedContent.aboutText;
+      document.getElementById('birthday').innerHTML = selectedContent.birthday;
+      document.getElementById('birthday-value').innerHTML = selectedContent.birthdayValue;
+      document.getElementById('phone').innerHTML = selectedContent.phone;
+      document.getElementById('phone-value').innerHTML = selectedContent.phoneValue;
+      document.getElementById('city').innerHTML = selectedContent.city;
+      document.getElementById('city-value').innerHTML = selectedContent.cityValue;
+      document.getElementById('age').innerHTML = selectedContent.age;
+      document.getElementById('age-value').innerHTML = selectedContent.ageValue;
+      document.getElementById('degree').innerHTML = selectedContent.degree;
+      document.getElementById('degree-value').innerHTML = selectedContent.degreeValue;
+      document.getElementById('email').innerHTML = selectedContent.email;
+      document.getElementById('email-value').innerHTML = selectedContent.emailValue;
+    }
+  </script>
+
+</body>
+
+</html>
+
 
 
     <!-- ======= Skills Section ======= -->
