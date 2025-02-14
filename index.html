@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -11,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/kraken.jpg" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -27,31 +26,30 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.7.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
+    <div class="language-selector">
+      <select id="language-selector" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+      </select>
+    </div>
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span id="home-title">Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span id="about-title">About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span id="resume-title">Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span id="portfolio-title">Portfolio</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span id="services-title">Services</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span id="contact-title">Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -60,8 +58,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Lucas Chitolina</h1>
-      <p>I'm a <span class="typed" data-typed-items="Data Analyst, Researcher, Learner"></span></p>
+      <h1 id="hero-title">Lucas Chitolina</h1>
+      <p id="hero-description">I'm a <span class="typed" data-typed-items="Data Analyst, Molecular Biologist, Learner"></span></p>
       <div class="social-links">
         <a href="https://github.com/Chitolina" class="github"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/lucas-chitolina/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -76,40 +74,32 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
-          <p>I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. 
-            My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. 
-            This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects. 
-            I have built a comprehensive skill set that includes abilities in GIS, Git, Microsoft Office, Power BI, Python, Shell Script, SQL, and more. 
-            I am committed to continuously enhancing my expertise and applying it to drive data-driven insights.
+          <h2 id="about-section-title">About</h2>
+          <p id="about-description">I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects.</p>
         </div>
-
 
         <div class="row">
           <div class="col-lg-4">
             <img src="assets/img/eu1.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Data Analyst &amp; Molecular Biologist</h3>
-            <p>
-              I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. 
-              However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. 
-              Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio. 
-              Now, I can clearly see a future ahead, and it’s full of possibilities!
+            <h3 id="about-role">Data Analyst &amp; Molecular Biologist</h3>
+            <p id="about-text">
+              I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>08 Aug 1991</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>55 (51) 996052171</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Porto Alegre-RS, BR</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="birthday">Birthday:</strong> <span id="birthday-value">08 Aug 1991</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="phone">Phone:</strong> <span id="phone-value">55 (51) 996052171</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="city">City:</strong> <span id="city-value">Porto Alegre-RS, BR</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>33</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MSc. Molecular Biology</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>lucas.chitolina@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="age">Age:</strong> <span id="age-value">33</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="degree">Degree:</strong> <span id="degree-value">MSc. Molecular Biology</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="email">E-mail:</strong> <span id="email-value">lucas.chitolina@egmail.com</span></li>
                 </ul>
               </div>
             </div>
@@ -119,20 +109,25 @@
       </div>
     </section><!-- End About Section -->
 
-
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>Below you can see a rank of my main technical/hard skills</p>
-        </div> 
+          <h2 id="skills-title">Skills</h2>
+          <p id="skills-description">Below you can see a rank of my main technical/hard skills</p>
+        </div>
 
         <div class="row skills-content">
 
           <div class="col-lg-6">
 
+            <div class="progress">
+              <span class="skill">GIS <i class="val">ADVANCED</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
             <div class="progress">
               <span class="skill">GIT/GITHUB <i class="val">GOOD</i></span>
@@ -148,6 +143,15 @@
               </div>
             </div>
 
+            <div class="progress">
+              <span class="skill">POWER BI <i class="val">GOOD</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
           <div class="col-lg-6">
 
             <div class="progress">
@@ -158,7 +162,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">DATA ANALYSIS <i class="val">GOOD</i></span>
+              <span class="skill">SHELL SCRIPT <i class="val">GOOD</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -185,97 +189,97 @@
       </div>
     </section><!-- End Skills Section -->
 
-
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <p></p>
+          <h2 id="resume-section-title">Resume</h2>
+          <p id="resume-description"></p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title" id="resume-summary-title">Sumary</h3>
             <div class="resume-item pb-0">
               <h4>Lucas Santos Chitolina</h4>
-              <p><em>Disciplined and self-sufficient professional, able to solve problems based on analysis and self-learning. I show ease in interpersonal relationships, passion for transmitting information in a creative and structured way, and I am in continuous improvement in the study of data manipulation and programming tools.</em></p>
-        </div>
+              <p id="resume-summary-text"><em>Disciplined and self-sufficient professional, able to solve problems based on analysis and self-learning. I show ease in interpersonal relationships, passion for transmitting information in a creative and structured way, and I am in continuous improvement in the study of data manipulation and programming tools.</em></p>
+            </div>
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title" id="resume-education-title">Education</h3>
             <div class="resume-item">
               <h4>MSc in Molecular Biology</h4>
               <h5>2019 - 2021</h5>
               <p><em>Pontifical Catholic University of Rio Grande do Sul - PUCRS</em></p>
-              <p>Methodological application with Shell Script and data analysis through graphical and statistical approach, using Python language and SPSS software, respectively.
+              <p id="resume-education-description-1">Methodological application with Shell Script and data analysis through graphical and statistical approach, using Python language and SPSS software, respectively.
                 Dissertation: "In silico study, by classical molecular dynamics, of the tertiary structure of the enzyme MtInhA (EC 1.3.1.9) from Mycobacterium tuberculosis under quaternary structure constraints".
-                </p>
+              </p>
             </div>
             <div class="resume-item">
               <h4>Bachelor of Biological Sciences</h4>
               <h5>2012 - 2017</h5>
               <p><em>Pontifical Catholic University of Rio Grande do Sul - PUCRS</em></p>
-              <p>A Bachelor of Biological Sciences teaches you how living organisms grow, reproduce, adapt and evolve; how life organizes in a chemical, phisiological and ecological way. You understand how species and ecological communities can be managed, conserved and restored, using techniques ranging from genetic analysis to data collection from whole populations and ecosystems, to big data synthesis science.</p>
+              <p id="resume-education-description-2">A Bachelor of Biological Sciences teaches you how living organisms grow, reproduce, adapt and evolve; how life organizes in a chemical, phisiological and ecological way. You understand how species and ecological communities can be managed, conserved and restored, using techniques ranging from genetic analysis to data collection from whole populations and ecosystems, to big data synthesis science.</p>
             </div>
           </div>
           <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" id="resume-experience-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Data Analyst</h4>
               <h5>2022 - Nowadays </h5>
               <p><em>Quero-Quero corporation </em></p>
               <ul>
-              <p>Handling data, automating routines, and analyzing the company’s health indicators. Well-versed in tools such as Python, SQL, Excel, and others.</p> 
-                <li>Automation of routines using Python, VBA, and SQL;</li>
-                <li>Analysis of key performance indicators to support strategic decision-making;</li>
-                <li>Development of internal tools to optimize operational processes.</li>
+                <p id="resume-experience-description-1">Handling data, automating routines, and analyzing the company’s health indicators. Well-versed in tools such as Python, SQL, Excel, and others.</p>
+                <li id="resume-experience-item-1">Automation of routines using Python, VBA, and SQL;</li>
+                <li id="resume-experience-item-2">Analysis of key performance indicators to support strategic decision-making;</li>
+                <li id="resume-experience-item-3">Development of internal tools to optimize operational processes.</li>
+              </ul>
             </div>
             <div class="resume-item">
               <h4>Herpetology Intern</h4>
               <h5>2016/2</h5>
               <p><em> PUCRS Science and Technology Museum</em></p>
               <ul>
-              <p>Summarized period in aid of field trips, analysis and curation of models collected for the museum's collection, practice in the use of dichotomic key, and genetic sequence analysis through the "Sequencher" software. 
-                <li>Tipping of specimens, sorting and separation of collected material;</li> 
-                <li>Taxonomic and genetic analysis;</li> 
-                <li> Assistance in field research.</li> 
-              </p>
+                <p id="resume-experience-description-2">Summarized period in aid of field trips, analysis and curation of models collected for the museum's collection, practice in the use of dichotomic key, and genetic sequence analysis through the "Sequencher" software.</p>
+                <li id="resume-experience-item-4">Tipping of specimens, sorting and separation of collected material;</li>
+                <li id="resume-experience-item-5">Taxonomic and genetic analysis;</li>
+                <li id="resume-experience-item-6">Assistance in field research.</li>
+              </ul>
             </div>
             <div class="resume-item">
               <h4>Botany Intern</h4>
               <h5>2016/1</h5>
               <p><em> PUCRS Science and Technology Museum</em></p>
               <ul>
-              <p>The main activities at the Herbarium were to exercise the correct curation of specimens, taxonomic classification with a dichotomic key at species level, filling in the museum's database worksheet and preparing didactic material aimed to the public.
-                <li>Application of assembly, registration and insertion of exsiccates;</li>
-                <li>Updating the collection registration database;</li>
-                <li>Educational dynamics.</li>
-              </p>
+                <p id="resume-experience-description-3">The main activities at the Herbarium were to exercise the correct curation of specimens, taxonomic classification with a dichotomic key at species level, filling in the museum's database worksheet and preparing didactic material aimed to the public.</p>
+                <li id="resume-experience-item-7">Application of assembly, registration and insertion of exsiccates;</li>
+                <li id="resume-experience-item-8">Updating the collection registration database;</li>
+                <li id="resume-experience-item-9">Educational dynamics.</li>
+              </ul>
             </div>
             <div class="resume-item">
               <h4>Undergraduate Research Fellow</h4>
               <h5>2012 - 2013</h5>
               <p><em> PUCRS Aquatic Ecology Laboratory</em></p>
               <ul>
-              <p>Collection and characterization of suctorian ciliates in freshwater lakes of Rio Grande do Sul; the presence of these organisms serve as a bioindicator of a eutrophic aquatic environment. It involved the presentation of scientific initiation seminars, preparation of grant summaries to CNPQ, and assistance to laboratory students.
-              </p>
+                <p id="resume-experience-description-4">Collection and characterization of suctorian ciliates in freshwater lakes of Rio Grande do Sul; the presence of these organisms serve as a bioindicator of a eutrophic aquatic environment. It involved the presentation of scientific initiation seminars, preparation of grant summaries to CNPQ, and assistance to laboratory students.</p>
+              </ul>
             </div>
             <p></p>
             <div class="button">
-             <button type="action">
-               <a href="cv/Analista_LucasChitolina_CV.pdf" title="Download resume">Download resume
-               </a>
-            </button>
-          </div>
+              <button type="action">
+                <a href="cv/Analista_LucasChitolina_CV.pdf" title="Download resume" id="download-resume">Download resume</a>
+              </button>
+            </div>
             <p></p>
             <div class="button">
-             <button type="action">
-             <a href="https://github.com/Chitolina/Certificados/tree/main/Certificados" title="Certificates">Certificates
-             </a>
-            </button>
+              <button type="action">
+                <a href="https://github.com/Chitolina/Certificados/tree/main/Certificados" title="Certificates" id="certificates-link">Certificates</a>
+              </button>
+            </div>
           </div>
         </div>
+
       </div>
     </section><!-- End Resume Section -->
 
@@ -284,30 +288,16 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Welcome to my portfolio site. I appreciate your time coming by and I'm always open to positive feedbacks and new tips/suggestions!</p>
+          <h2 id="portfolio-section-title">Portfolio</h2>
+          <p id="portfolio-description">Welcome to my portfolio site. I appreciate your time coming by and I'm always open to positive feedbacks and new tips/suggestions!</p>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Data Analysis </li>
+              <li data-filter="*" class="filter-active" id="portfolio-filter-all">All</li>
+              <li data-filter=".filter-app" id="portfolio-filter-data-analysis">Data Analysis</li>
             </ul>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/olist.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Mini project</h4>
-              <p>Web Scraping/Dashboard/Graphs</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/olist.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details2.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -316,8 +306,8 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/dino.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Mini project<h4>
-                <p>Exploratory Analysis (EDA) and Data Manipulation: Dino dataset</p>
+                <h4 id="portfolio-item-1-title">Mini project</h4>
+                <p id="portfolio-item-1-description">Exploratory Analysis (EDA) and Data Manipulation: Dino dataset</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/dino.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 1"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -326,29 +316,42 @@
             </div>
           </div>
 
-          
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-             <div class="portfolio-wrap">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/olist.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 id="portfolio-item-2-title">Mini project</h4>
+                <p id="portfolio-item-2-description">Web Scraping/Dashboard/Graphs</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/olist.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details2.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
               <img src="assets/img/portfolio/imdb.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Mini project</h4>
-                <p>IMDB Exploratory Analysis (Python & SQL)</p>
+                <h4 id="portfolio-item-3-title">Mini project</h4>
+                <p id="portfolio-item-3-description">IMDB Exploratory Analysis (Python & SQL)</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/imdb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/imdb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details3.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-                    
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/NLP.jpg" class="img-fluid" alt="">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/NLP.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Mini project</h4>
-                <p>Natural Language Processing</p>
+                <h4 id="portfolio-item-4-title">Mini project</h4>
+                <p id="portfolio-item-4-description">Natural Language Processing</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/NLP.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/NLP.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 4"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details4.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -357,77 +360,28 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-             <img src="assets/img/portfolio/TW.jpg" class="img-fluid" alt="">
-             <div class="portfolio-info">
-               <h4>Mini project</h4>
-               <p>Natural Language Processing with Disaster Tweets</p>
-               <div class="portfolio-links">
-                 <a href="assets/img/portfolio/TW.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 2"><i class="bx bx-plus"></i></a>
-                 <a href="portfolio-details5.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-               </div>
-             </div>
-           </div>
-         </div>
+              <img src="assets/img/portfolio/TW.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 id="portfolio-item-5-title">Mini project</h4>
+                <p id="portfolio-item-5-description">Natural Language Processing with Disaster Tweets</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/TW.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project 5"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details5.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section><!-- End Portfolio Section -->
-
-    <!-- ======= Facts Section =======
-        <section id="facts" class="facts">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-title">
-              <h2>Facts</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
-    
-            <div class="row">
-    
-              <div class="col-lg-3 col-md-6">
-                <div class="count-box">
-                  <i class="bi bi-emoji-smile"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Happy Clients</p>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                <div class="count-box">
-                  <i class="bi bi-journal-richtext"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Projects</p>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                <div class="count-box">
-                  <i class="bi bi-headset"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Hours Of Support</p>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Awards</p>
-                </div>
-              </div>
-    
-            </div>
-    
-          </div>
-    -->
-
-    </section><!-- End Facts Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services & Tools</h2>
+          <h2 id="services-section-title">Services & Tools</h2>
         </div>
 
         <div class="row">
@@ -440,26 +394,38 @@
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="">Dashboard & Data Visualization</a></h4>
-              <p>Excel and/or Power Bi, merged with a good Story telling, are able to act like a book or a map filled with dynamic charts with the purpose of reaching the best understanding of our data.
-              </p>
-            </div>
-          </div>
-         
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Descriptive Analysis</a></h4>
-              <p> Describing or summarizing a set of data. It is popular for its ability to generate accessible insights from otherwise uninterpreted data. It draws insights solely from past data, by manipulating in ways that make it more meaningful.</p>
+              <h4><a href="" id="service-1-title">Dashboard & Data Visualization</a></h4>
+              <p id="service-1-description">Excel and/or Power Bi, merged with a good Story telling, are able to act like a book or a map filled with dynamic charts with the purpose of reaching the best understanding of our data.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="" id="service-2-title">Descriptive Analysis</a></h4>
+              <p id="service-2-description">Describing or summarizing a set of data. It is popular for its ability to generate accessible insights from otherwise uninterpreted data. It draws insights solely from past data, by manipulating in ways that make it more meaningful.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.87071277845988,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="" id="service-3-title">Diagnostic Analysis</a></h4>
+              <p id="service-3-description">Using the insights found from descriptive analytics to find the causes of outcomes. It creates more connections between data and identifies patterns of behavior.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -467,38 +433,25 @@
                 </svg>
                 <i class="bx bx-layer"></i>
               </div>
-              <h4><a href="">Diagnostic Analysis</a></h4>
-              <p> Using the insights found from descriptive analytics to find the causes of outcomes. It creates more connections between data and identifies patterns of behavior.</p>
+              <h4><a href="" id="service-4-title">Prescriptive Analysis</a></h4>
+              <p id="service-4-description">Analyzing data and providing instant recommendations on how to optimize business practices to suit multiple predicted outcomes. It takes the “what we know” (data), comprehensively understands that data to predict what could happen, and suggests the best steps forward based on informed simulations.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="500">
             <div class="icon-box iconbox-red">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,532.3542879108572"></path>
                 </svg>
                 <i class="bx bx-slideshow"></i>
               </div>
-              <h4><a href="">Prescriptive Analysis</a></h4>
-              <p>Analyzing data and providing instant recommendations on how to optimize business practices to suit multiple predicted outcomes. It takes the “what we know” (data), comprehensively understands that data to predict what could happen, and suggests the best steps forward based on informed simulations.</p>
+              <h4><a href="" id="service-5-title">Geospatial Analysis</a></h4>
+              <p id="service-5-description">Through QGIS and Geospatial knowledge it is possible to visualize, manage, edit, analyze data, and compose printable maps useful for reports.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Geospacial Analysis</a></h4>
-              <p>Throught QGIS and Geospacial knowledge it is possible to visualize, manage, edit, analyse data, and compose printable maps usefull for reports.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="600">
             <div class="icon-box iconbox-teal">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -506,8 +459,8 @@
                 </svg>
                 <i class="bx bx-arch"></i>
               </div>
-              <h4><a href="">Bioinformatics</a></h4>
-              <p> Applying tools of computation and analysis to the capture and interpretation of biological data.</p>
+              <h4><a href="" id="service-6-title">Bioinformatics</a></h4>
+              <p id="service-6-description">Applying tools of computation and analysis to the capture and interpretation of biological data.</p>
             </div>
           </div>
 
@@ -516,98 +469,12 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Testimonials Section ======= 
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-              -->
-
-            </div><!-- End testimonial item -->
-
- <!-- ======= Testimonials Section =======
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
- <!-- ======= Testimonials Section =======
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
- <!-- ======= Testimonials Section =======
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
- <!-- ======= Testimonials Section =======
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
- <!-- ======= Testimonials Section =======
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2 id="contact-section-title">Contact</h2>
         </div>
 
         <div class="row mt-1">
@@ -616,20 +483,20 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>João Telles, Bom Fim, Porto Alegre-RS</p>
+                <h4 id="contact-location-title">Location:</h4>
+                <p id="contact-location">João Telles, Bom Fim, Porto Alegre-RS</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>lucas.chitolina@edu.pucrs.br</p>
+                <h4 id="contact-email-title">Email:</h4>
+                <p id="contact-email">lucas.chitolina@edu.pucrs.br</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>55 (51) 996052171</p>
+                <h4 id="contact-phone-title">Call:</h4>
+                <p id="contact-phone">55 (51) 996052171</p>
               </div>
 
             </div>
@@ -673,11 +540,8 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Lucas Chitolina</h3>
-      <p>"Fear is a powerful drug,
-        overcome it and
-        you think that you can do
-        anything!" ― Björk</p>
+      <h3 id="footer-title">Lucas Chitolina</h3>
+      <p id="footer-quote">"Fear is a powerful drug, overcome it and you think that you can do anything!" ― Björk</p>
       <div class="social-links">
         <a href="https://github.com/Chitolina" class="github"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/lucas-chitolina/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -686,10 +550,6 @@
         &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -712,6 +572,260 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <script>
+    const content = {
+      en: {
+        heroTitle: "Lucas Chitolina",
+        heroDescription: "I'm a <span class='typed' data-typed-items='Data Analyst, Molecular Biologist, Learner'></span>",
+        aboutSectionTitle: "About",
+        aboutDescription: "I'm a Data Analyst with a Bachelor's degree in Biological Sciences and a Master's degree in Molecular Biology from PUCRS. My academic background has a strong focus on bioinformatics, where I utilized Python and Shell Script (Linux) for my research. This experience sparked my interest in the field of data analysis, leading me to further develop my skills through certifications and hands-on projects.",
+        aboutRole: "Data Analyst & Molecular Biologist",
+        aboutText: "I am passionate about learning and the endless possibilities it unveils. For a long time, I believed that biology was the one thing that defined me. However, after experiencing a deep disappointment with the academic field, I realized I wouldn't grow if I remained confined to that niche. Today, I am immersing myself in data analysis, exploring different programming languages, creating projects, and building an exciting portfolio.",
+        birthday: "Birthday:",
+        birthdayValue: "08 Aug 1991",
+        phone: "Phone:",
+        phoneValue: "55 (51) 996052171",
+        city: "City:",
+        cityValue: "Porto Alegre-RS, BR",
+        age: "Age:",
+        ageValue: "33",
+        degree: "Degree:",
+        degreeValue: "MSc. Molecular Biology",
+        email: "E-mail:",
+        emailValue: "lucas.chitolina@egmail.com",
+        skillsTitle: "Skills",
+        skillsDescription: "Below you can see a rank of my main technical/hard skills",
+        resumeSectionTitle: "Resume",
+        resumeDescription: "",
+        resumeSummaryTitle: "Sumary",
+        resumeSummaryText: "Disciplined and self-sufficient professional, able to solve problems based on analysis and self-learning. I show ease in interpersonal relationships, passion for transmitting information in a creative and structured way, and I am in continuous improvement in the study of data manipulation and programming tools.",
+        resumeEducationTitle: "Education",
+        resumeEducationDescription1: "Methodological application with Shell Script and data analysis through graphical and statistical approach, using Python language and SPSS software, respectively. Dissertation: 'In silico study, by classical molecular dynamics, of the tertiary structure of the enzyme MtInhA (EC 1.3.1.9) from Mycobacterium tuberculosis under quaternary structure constraints'.",
+        resumeEducationDescription2: "A Bachelor of Biological Sciences teaches you how living organisms grow, reproduce, adapt and evolve; how life organizes in a chemical, phisiological and ecological way. You understand how species and ecological communities can be managed, conserved and restored, using techniques ranging from genetic analysis to data collection from whole populations and ecosystems, to big data synthesis science.",
+        resumeExperienceTitle: "Professional Experience",
+        resumeExperienceDescription1: "Handling data, automating routines, and analyzing the company’s health indicators. Well-versed in tools such as Python, SQL, Excel, and others.",
+        resumeExperienceItem1: "Automation of routines using Python, VBA, and SQL;",
+        resumeExperienceItem2: "Analysis of key performance indicators to support strategic decision-making;",
+        resumeExperienceItem3: "Development of internal tools to optimize operational processes.",
+        resumeExperienceDescription2: "Summarized period in aid of field trips, analysis and curation of models collected for the museum's collection, practice in the use of dichotomic key, and genetic sequence analysis through the 'Sequencher' software.",
+        resumeExperienceItem4: "Tipping of specimens, sorting and separation of collected material;",
+        resumeExperienceItem5: "Taxonomic and genetic analysis;",
+        resumeExperienceItem6: "Assistance in field research.",
+        resumeExperienceDescription3: "The main activities at the Herbarium were to exercise the correct curation of specimens, taxonomic classification with a dichotomic key at species level, filling in the museum's database worksheet and preparing didactic material aimed to the public.",
+        resumeExperienceItem7: "Application of assembly, registration and insertion of exsiccates;",
+        resumeExperienceItem8: "Updating the collection registration database;",
+        resumeExperienceItem9: "Educational dynamics.",
+        resumeExperienceDescription4: "Collection and characterization of suctorian ciliates in freshwater lakes of Rio Grande do Sul; the presence of these organisms serve as a bioindicator of a eutrophic aquatic environment. It involved the presentation of scientific initiation seminars, preparation of grant summaries to CNPQ, and assistance to laboratory students.",
+        downloadResume: "Download resume",
+        certificatesLink: "Certificates",
+        portfolioSectionTitle: "Portfolio",
+        portfolioDescription: "Welcome to my portfolio site. I appreciate your time coming by and I'm always open to positive feedbacks and new tips/suggestions!",
+        portfolioFilterAll: "All",
+        portfolioFilterDataAnalysis: "Data Analysis",
+        portfolioItem1Title: "Mini project",
+        portfolioItem1Description: "Exploratory Analysis (EDA) and Data Manipulation: Dino dataset",
+        portfolioItem2Title: "Mini project",
+        portfolioItem2Description: "Web Scraping/Dashboard/Graphs",
+        portfolioItem3Title: "Mini project",
+        portfolioItem3Description: "IMDB Exploratory Analysis (Python & SQL)",
+        portfolioItem4Title: "Mini project",
+        portfolioItem4Description: "Natural Language Processing",
+        portfolioItem5Title: "Mini project",
+        portfolioItem5Description: "Natural Language Processing with Disaster Tweets",
+        servicesSectionTitle: "Services & Tools",
+        service1Title: "Dashboard & Data Visualization",
+        service1Description: "Excel and/or Power Bi, merged with a good Story telling, are able to act like a book or a map filled with dynamic charts with the purpose of reaching the best understanding of our data.",
+        service2Title: "Descriptive Analysis",
+        service2Description: "Describing or summarizing a set of data. It is popular for its ability to generate accessible insights from otherwise uninterpreted data. It draws insights solely from past data, by manipulating in ways that make it more meaningful.",
+        service3Title: "Diagnostic Analysis",
+        service3Description: "Using the insights found from descriptive analytics to find the causes of outcomes. It creates more connections between data and identifies patterns of behavior.",
+        service4Title: "Prescriptive Analysis",
+        service4Description: "Analyzing data and providing instant recommendations on how to optimize business practices to suit multiple predicted outcomes. It takes the “what we know” (data), comprehensively understands that data to predict what could happen, and suggests the best steps forward based on informed simulations.",
+        service5Title: "Geospatial Analysis",
+        service5Description: "Through QGIS and Geospatial knowledge it is possible to visualize, manage, edit, analyze data, and compose printable maps useful for reports.",
+        service6Title: "Bioinformatics",
+        service6Description: "Applying tools of computation and analysis to the capture and interpretation of biological data.",
+        contactSectionTitle: "Contact",
+        contactLocationTitle: "Location:",
+        contactLocation: "João Telles, Bom Fim, Porto Alegre-RS",
+        contactEmailTitle: "Email:",
+        contactEmail: "lucas.chitolina@edu.pucrs.br",
+        contactPhoneTitle: "Call:",
+        contactPhone: "55 (51) 996052171",
+        footerTitle: "Lucas Chitolina",
+        footerQuote: "Fear is a powerful drug, overcome it and you think that you can do anything! ― Björk"
+      },
+      pt: {
+        heroTitle: "Lucas Chitolina",
+        heroDescription: "Sou um Analista de Dados com bacharelado em Ciências Biológicas e mestrado em Biologia Molecular pela PUCRS. Meu histórico acadêmico tem um forte foco em bioinformática, onde utilizei Python e Shell Script (Linux) para minha pesquisa. Essa experiência despertou meu interesse pela análise de dados, levando-me a desenvolver ainda mais minhas habilidades através de certificações e projetos práticos.",
+        aboutSectionTitle: "Sobre",
+        aboutDescription: "Sou um Analista de Dados com Bacharelado em Ciências Biológicas e Mestrado em Biologia Molecular pela PUCRS. Minha formação acadêmica tem um foco forte em bioinformática, onde utilizei Python e Shell Script (Linux) para minha pesquisa. Essa experiência despertou meu interesse pela área de análise de dados, levando-me a desenvolver ainda mais minhas habilidades através de certificações e projetos práticos.",
+        aboutRole: "Analista de Dados & Biologista Molecular",
+        aboutText: "Sou apaixonado por aprender e pelas infinitas possibilidades que isso traz. Por muito tempo, acreditei que a biologia fosse a única coisa que me definia. Porém, depois de passar por uma grande decepção com a área acadêmica, percebi que não cresceria se ficasse preso a esse nicho. Hoje, estou me aprofundando na análise de dados, explorando diferentes linguagens de programação, criando projetos e construindo um portfólio empolgante.",
+        birthday: "Data de Nascimento:",
+        birthdayValue: "08 Ago 1991",
+        phone: "Telefone:",
+        phoneValue: "55 (51) 996052171",
+        city: "Cidade:",
+        cityValue: "Porto Alegre-RS, BR",
+        age: "Idade:",
+        ageValue: "33",
+        degree: "Formação:",
+        degreeValue: "Mestrado em Biologia Molecular",
+        email: "E-mail:",
+        emailValue: "lucas.chitolina@egmail.com",
+        skillsTitle: "Habilidades",
+        skillsDescription: "Abaixo você pode ver um ranking das minhas principais habilidades técnicas/hard skills",
+        resumeSectionTitle: "Currículo",
+        resumeDescription: "",
+        resumeSummaryTitle: "Resumo",
+                resumeSummaryText: "Profissional disciplinado e autossuficiente, capaz de resolver problemas com base em análise e autoaprendizado. Demonstro facilidade em relacionamentos interpessoais, paixão por transmitir informações de forma criativa e estruturada, e estou em constante aprimoramento no estudo de ferramentas de manipulação de dados e programação.",
+        resumeEducationTitle: "Educação",
+        resumeEducationDescription1: "Aplicação metodológica com Shell Script e análise de dados por meio de abordagem gráfica e estatística, utilizando a linguagem Python e o software SPSS, respectivamente. Dissertação: 'Estudo in silico, por dinâmica molecular clássica, da estrutura terciária da enzima MtInhA (EC 1.3.1.9) de Mycobacterium tuberculosis sob restrições de estrutura quaternária'.",
+        resumeEducationDescription2: "Um Bacharel em Ciências Biológicas ensina como os organismos vivos crescem, se reproduzem, se adaptam e evoluem; como a vida se organiza de forma química, fisiológica e ecológica. Você entende como espécies e comunidades ecológicas podem ser gerenciadas, conservadas e restauradas, usando técnicas que variam desde análise genética até coleta de dados de populações e ecossistemas inteiros, até ciência de síntese de big data.",
+        resumeExperienceTitle: "Experiência Profissional",
+        resumeExperienceDescription1: "Manipulação de dados, automação de rotinas e análise dos indicadores de saúde da empresa. Familiarizado com ferramentas como Python, SQL, Excel e outras.",
+        resumeExperienceItem1: "Automação de rotinas usando Python, VBA e SQL;",
+        resumeExperienceItem2: "Análise de indicadores-chave de desempenho para apoiar a tomada de decisões estratégicas;",
+        resumeExperienceItem3: "Desenvolvimento de ferramentas internas para otimizar processos operacionais.",
+        resumeExperienceDescription2: "Período resumido em auxílio a saídas de campo, análise e curadoria de modelos coletados para o acervo do museu, prática no uso de chave dicotômica e análise de sequências genéticas por meio do software 'Sequencher'.",
+        resumeExperienceItem4: "Inclusão de espécimes, triagem e separação de material coletado;",
+        resumeExperienceItem5: "Análise taxonômica e genética;",
+        resumeExperienceItem6: "Auxílio em pesquisas de campo.",
+        resumeExperienceDescription3: "As principais atividades no Herbário foram exercer a curadoria correta de espécimes, classificação taxonômica com chave dicotômica em nível de espécie, preenchimento da planilha de banco de dados do museu e preparação de material didático voltado ao público.",
+        resumeExperienceItem7: "Aplicação de montagem, registro e inserção de exsicatas;",
+        resumeExperienceItem8: "Atualização do banco de dados de registro da coleção;",
+        resumeExperienceItem9: "Dinâmicas educacionais.",
+        resumeExperienceDescription4: "Coleta e caracterização de ciliados suctórios em lagos de água doce do Rio Grande do Sul; a presença desses organismos serve como bioindicador de um ambiente aquático eutrófico. Envolveu a apresentação de seminários de iniciação científica, preparação de resumos de bolsas para o CNPQ e auxílio a alunos do laboratório.",
+        downloadResume: "Baixar currículo",
+        certificatesLink: "Certificados",
+        portfolioSectionTitle: "Portfólio",
+        portfolioDescription: "Bem-vindo ao meu site de portfólio. Agradeço o seu tempo aqui e estou sempre aberto a feedbacks positivos e novas dicas/sugestões!",
+        portfolioFilterAll: "Todos",
+        portfolioFilterDataAnalysis: "Análise de Dados",
+        portfolioItem1Title: "Mini projeto",
+        portfolioItem1Description: "Análise Exploratória (EDA) e Manipulação de Dados: Conjunto de dados Dino",
+        portfolioItem2Title: "Mini projeto",
+        portfolioItem2Description: "Web Scraping/Dashboard/Gráficos",
+        portfolioItem3Title: "Mini projeto",
+        portfolioItem3Description: "Análise Exploratória do IMDB (Python & SQL)",
+        portfolioItem4Title: "Mini projeto",
+        portfolioItem4Description: "Processamento de Linguagem Natural",
+        portfolioItem5Title: "Mini projeto",
+        portfolioItem5Description: "Processamento de Linguagem Natural com Tweets de Desastres",
+        servicesSectionTitle: "Serviços & Ferramentas",
+        service1Title: "Dashboard & Visualização de Dados",
+        service1Description: "Excel e/ou Power Bi, combinados com uma boa narrativa, são capazes de atuar como um livro ou um mapa repleto de gráficos dinâmicos com o objetivo de alcançar a melhor compreensão dos nossos dados.",
+        service2Title: "Análise Descritiva",
+        service2Description: "Descrever ou resumir um conjunto de dados. É popular por sua capacidade de gerar insights acessíveis a partir de dados não interpretados. Extrai insights exclusivamente de dados passados, manipulando-os de maneiras que os tornam mais significativos.",
+        service3Title: "Análise Diagnóstica",
+        service3Description: "Usando os insights encontrados na análise descritiva para encontrar as causas dos resultados. Cria mais conexões entre os dados e identifica padrões de comportamento.",
+        service4Title: "Análise Preditiva",
+        service4Description: "Analisando dados e fornecendo recomendações instantâneas sobre como otimizar práticas de negócios para atender a múltiplos resultados previstos. Ele pega o 'que sabemos' (dados), compreende esses dados para prever o que poderia acontecer e sugere os melhores passos a seguir com base em simulações informadas.",
+        service5Title: "Análise Geoespacial",
+        service5Description: "Através do QGIS e do conhecimento geoespacial, é possível visualizar, gerenciar, editar, analisar dados e compor mapas imprimíveis úteis para relatórios.",
+        service6Title: "Bioinformática",
+        service6Description: "Aplicando ferramentas de computação e análise para a captura e interpretação de dados biológicos.",
+        contactSectionTitle: "Contato",
+        contactLocationTitle: "Localização:",
+        contactLocation: "João Telles, Bom Fim, Porto Alegre-RS",
+        contactEmailTitle: "E-mail:",
+        contactEmail: "lucas.chitolina@edu.pucrs.br",
+        contactPhoneTitle: "Telefone:",
+        contactPhone: "55 (51) 996052171",
+        footerTitle: "Lucas Chitolina",
+        footerQuote: "O medo é uma droga poderosa, supere-o e você pensará que pode fazer qualquer coisa! ― Björk"
+      }
+    };
 
+    function changeLanguage() {
+      const language = document.getElementById('language-selector').value;
+      const selectedContent = content[language];
+
+      // Atualiza os textos dinamicamente
+      document.getElementById('hero-title').innerHTML = selectedContent.heroTitle;
+      document.getElementById('hero-description').innerHTML = selectedContent.heroDescription;
+      document.getElementById('about-section-title').innerHTML = selectedContent.aboutSectionTitle;
+      document.getElementById('about-description').innerHTML = selectedContent.aboutDescription;
+      document.getElementById('about-role').innerHTML = selectedContent.aboutRole;
+      document.getElementById('about-text').innerHTML = selectedContent.aboutText;
+      document.getElementById('birthday').innerHTML = selectedContent.birthday;
+      document.getElementById('birthday-value').innerHTML = selectedContent.birthdayValue;
+      document.getElementById('phone').innerHTML = selectedContent.phone;
+      document.getElementById('phone-value').innerHTML = selectedContent.phoneValue;
+      document.getElementById('city').innerHTML = selectedContent.city;
+      document.getElementById('city-value').innerHTML = selectedContent.cityValue;
+      document.getElementById('age').innerHTML = selectedContent.age;
+      document.getElementById('age-value').innerHTML = selectedContent.ageValue;
+      document.getElementById('degree').innerHTML = selectedContent.degree;
+      document.getElementById('degree-value').innerHTML = selectedContent.degreeValue;
+      document.getElementById('email').innerHTML = selectedContent.email;
+      document.getElementById('email-value').innerHTML = selectedContent.emailValue;
+      document.getElementById('skills-title').innerHTML = selectedContent.skillsTitle;
+      document.getElementById('skills-description').innerHTML = selectedContent.skillsDescription;
+      document.getElementById('resume-section-title').innerHTML = selectedContent.resumeSectionTitle;
+      document.getElementById('resume-description').innerHTML = selectedContent.resumeDescription;
+      document.getElementById('resume-summary-title').innerHTML = selectedContent.resumeSummaryTitle;
+      document.getElementById('resume-summary-text').innerHTML = selectedContent.resumeSummaryText;
+      document.getElementById('resume-education-title').innerHTML = selectedContent.resumeEducationTitle;
+      document.getElementById('resume-education-description-1').innerHTML = selectedContent.resumeEducationDescription1;
+      document.getElementById('resume-education-description-2').innerHTML = selectedContent.resumeEducationDescription2;
+      document.getElementById('resume-experience-title').innerHTML = selectedContent.resumeExperienceTitle;
+      document.getElementById('resume-experience-description-1').innerHTML = selectedContent.resumeExperienceDescription1;
+      document.getElementById('resume-experience-item-1').innerHTML = selectedContent.resumeExperienceItem1;
+      document.getElementById('resume-experience-item-2').innerHTML = selectedContent.resumeExperienceItem2;
+      document.getElementById('resume-experience-item-3').innerHTML = selectedContent.resumeExperienceItem3;
+      document.getElementById('resume-experience-description-2').innerHTML = selectedContent.resumeExperienceDescription2;
+      document.getElementById('resume-experience-item-4').innerHTML = selectedContent.resumeExperienceItem4;
+      document.getElementById('resume-experience-item-5').innerHTML = selectedContent.resumeExperienceItem5;
+      document.getElementById('resume-experience-item-6').innerHTML = selectedContent.resumeExperienceItem6;
+      document.getElementById('resume-experience-description-3').innerHTML = selectedContent.resumeExperienceDescription3;
+      document.getElementById('resume-experience-item-7').innerHTML = selectedContent.resumeExperienceItem7;
+      document.getElementById('resume-experience-item-8').innerHTML = selectedContent.resumeExperienceItem8;
+      document.getElementById('resume-experience-item-9').innerHTML = selectedContent.resumeExperienceItem9;
+      document.getElementById('resume-experience-description-4').innerHTML = selectedContent.resumeExperienceDescription4;
+      document.getElementById('download-resume').innerHTML = selectedContent.downloadResume;
+      document.getElementById('certificates-link').innerHTML = selectedContent.certificatesLink;
+      document.getElementById('portfolio-section-title').innerHTML = selectedContent.portfolioSectionTitle;
+      document.getElementById('portfolio-description').innerHTML = selectedContent.portfolioDescription;
+      document.getElementById('portfolio-filter-all').innerHTML = selectedContent.portfolioFilterAll;
+      document.getElementById('portfolio-filter-data-analysis').innerHTML = selectedContent.portfolioFilterDataAnalysis;
+      document.getElementById('portfolio-item-1-title').innerHTML = selectedContent.portfolioItem1Title;
+      document.getElementById('portfolio-item-1-description').innerHTML = selectedContent.portfolioItem1Description;
+      document.getElementById('portfolio-item-2-title').innerHTML = selectedContent.portfolioItem2Title;
+      document.getElementById('portfolio-item-2-description').innerHTML = selectedContent.portfolioItem2Description;
+      document.getElementById('portfolio-item-3-title').innerHTML = selectedContent.portfolioItem3Title;
+      document.getElementById('portfolio-item-3-description').innerHTML = selectedContent.portfolioItem3Description;
+      document.getElementById('portfolio-item-4-title').innerHTML = selectedContent.portfolioItem4Title;
+      document.getElementById('portfolio-item-4-description').innerHTML = selectedContent.portfolioItem4Description;
+      document.getElementById('portfolio-item-5-title').innerHTML = selectedContent.portfolioItem5Title;
+      document.getElementById('portfolio-item-5-description').innerHTML = selectedContent.portfolioItem5Description;
+      document.getElementById('services-section-title').innerHTML = selectedContent.servicesSectionTitle;
+      document.getElementById('service-1-title').innerHTML = selectedContent.service1Title;
+      document.getElementById('service-1-description').innerHTML = selectedContent.service1Description;
+      document.getElementById('service-2-title').innerHTML = selectedContent.service2Title;
+      document.getElementById('service-2-description').innerHTML = selectedContent.service2Description;
+      document.getElementById('service-3-title').innerHTML = selectedContent.service3Title;
+      document.getElementById('service-3-description').innerHTML = selectedContent.service3Description;
+      document.getElementById('service-4-title').innerHTML = selectedContent.service4Title;
+      document.getElementById('service-4-description').innerHTML = selectedContent.service4Description;
+      document.getElementById('service-5-title').innerHTML = selectedContent.service5Title;
+      document.getElementById('service-5-description').innerHTML = selectedContent.service5Description;
+      document.getElementById('service-6-title').innerHTML = selectedContent.service6Title;
+      document.getElementById('service-6-description').innerHTML = selectedContent.service6Description;
+      document.getElementById('contact-section-title').innerHTML = selectedContent.contactSectionTitle;
+      document.getElementById('contact-location-title').innerHTML = selectedContent.contactLocationTitle;
+      document.getElementById('contact-location').innerHTML = selectedContent.contactLocation;
+      document.getElementById('contact-email-title').innerHTML = selectedContent.contactEmailTitle;
+      document.getElementById('contact-email').innerHTML = selectedContent.contactEmail;
+      document.getElementById('contact-phone-title').innerHTML = selectedContent.contactPhoneTitle;
+      document.getElementById('contact-phone').innerHTML = selectedContent.contactPhone;
+      document.getElementById('footer-title').innerHTML = selectedContent.footerTitle;
+      document.getElementById('footer-quote').innerHTML = selectedContent.footerQuote;
+    }
+
+    // Inicializa o idioma padrão
+    changeLanguage();
+  </script>
+</body>
 </html>
