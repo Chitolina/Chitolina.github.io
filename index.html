@@ -6,12 +6,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lucas Chitolina ~ Portfólio</title>
+  <title>Lucas_Chitolina_Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/capi.png" rel="icon">
+  <link href="assets/img/.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -71,7 +71,7 @@
 
   <main id="main">
 
-   <!-- ======= About Section ======= -->
+<!-- ======= About Section ======= -->
 <section id="about" class="about">
   <div class="container" data-aos="fade-up">
 
@@ -80,10 +80,10 @@
       <button onclick="toggleLanguage()" class="lang-toggle">Ver em Português</button>
       <div class="lang-text">
         <div class="lang-en active">
-          <p>With a Bachelor's degree in Biology... [texto completo em inglês]</p>
+          <p>Biologist turned Data Analyst with a Master's in Molecular Biology (computational focus). Proven expertise in transforming complex data into strategic insights using Python, SQL, and Excel/VBA. Authored peer-reviewed research and developed automation solutions that enhanced operational efficiency at Quero-Quero retail.</p>
         </div>
         <div class="lang-pt">
-          <p>Graduado em Biologia... [texto completo em português]</p>
+          <p>Biólogo e Analista de Dados com Mestrado em Biologia Molecular (ênfase computacional). Especialista em transformar dados complexos em insights estratégicos usando Python, SQL e Excel/VBA. Publiquei pesquisa científica e desenvolvi soluções de automação que otimizaram operações no varejo Quero-Quero.</p>
         </div>
       </div>
     </div>
@@ -96,10 +96,10 @@
         <h3>Data Analyst &amp; Molecular Biologist</h3>
         <div class="lang-text">
           <div class="lang-en active">
-            <p>Deeply passionate about continuous learning... [texto completo em inglês]</p>
+            <p>Passionate about data-driven innovation. Transitioned from biological research to tech, building analytical solutions through continuous learning. My portfolio showcases projects combining scientific rigor with technical execution.</p>
           </div>
           <div class="lang-pt">
-            <p>Sou movido pela paixão... [texto completo em português]</p>
+            <p>Profissional em transição para tecnologia, unindo rigor científico à análise de dados. Meu portfólio reflete projetos práticos que traduzem aprendizagem contínua em soluções técnicas relevantes para negócios.</p>
           </div>
         </div>
       </div>
@@ -109,9 +109,18 @@
 </section>
 
 <style>
-.lang-pt {
-  display: none;
+.lang-text div {
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
 }
+
+.lang-text div.active {
+  position: relative;
+  opacity: 1;
+}
+
 .lang-toggle {
   position: absolute;
   top: 20px;
@@ -120,25 +129,33 @@
   background: #007bff;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 </style>
 
 <script>
 function toggleLanguage() {
-  const toggleButton = document.querySelector('.lang-toggle');
+  const toggleBtn = document.querySelector('.lang-toggle');
   const enElements = document.querySelectorAll('.lang-en');
   const ptElements = document.querySelectorAll('.lang-pt');
   
+  // Toggle visibility
   enElements.forEach(el => el.classList.toggle('active'));
   ptElements.forEach(el => el.classList.toggle('active'));
   
-  if (toggleButton.textContent === 'Ver em Português') {
-    toggleButton.textContent = 'View in English';
-  } else {
-    toggleButton.textContent = 'Ver em Português';
-  }
+  // Update button text
+  toggleBtn.textContent = toggleBtn.textContent.includes('Português') 
+    ? 'View in English' 
+    : 'Ver em Português';
 }
 </script>
 
