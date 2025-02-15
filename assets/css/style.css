@@ -27,6 +27,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.nav-menu .highlight {
+  color: #FFD700; /* Cor dourada */
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700, 0 0 20px #FFD700;
+  }
+  100% {
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
