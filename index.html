@@ -1,257 +1,202 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-    <title>Lucas_Chitolina_Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-  
-    <!-- Favicons -->
-    <link href="assets/img/.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-  
-    <!-- Custom About Section Styling -->
-    <style>
-      .about {
-        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-        padding: 80px 0;
-        position: relative;
-      }
-      
-      .section-title h2 {
-        font-size: 2.5rem;
-        color: #2d3436;
-        position: relative;
-        margin-bottom: 30px;
-      }
-      
-      .section-title h2:after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 3px;
-        background: #007bff;
-      }
-      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Lucas_Chitolina_Portfolio</title>
+
+  <!-- Favicons, Google Fonts, Vendor CSS Files e Template CSS -->
+  <link href="assets/img/.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Custom About Section Styling -->
+  <style>
+    /* Estilos da seção About */
+    .about {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 80px 0;
+      position: relative;
+    }
+    
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #2d3436;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: #007bff;
+    }
+    
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,123,255,0.2);
+      cursor: pointer;
+    }
+    
+    .lang-toggle:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,123,255,0.3);
+    }
+    
+    .content h3 {
+      color: #2d3436;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    
+    .lang-text p {
+      color: #636e72;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .img-fluid {
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .img-fluid:hover {
+      transform: scale(1.03);
+    }
+    
+    /* Controle de exibição dos textos de idiomas */
+    .lang-text div {
+      display: none;
+      transition: all 0.4s ease-in-out;
+    }
+    
+    .lang-text div.active {
+      display: block;
+    }
+    
+    /* Ajustes responsivos */
+    @media (max-width: 768px) {
       .lang-toggle {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 30px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(0,123,255,0.2);
-        cursor: pointer;
-      }
-      
-      .lang-toggle:hover {
-        background: #0056b3;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-      }
-      
-      .content h3 {
-        color: #2d3436;
-        font-size: 2rem;
-        margin-bottom: 20px;
-        font-weight: 700;
-      }
-      
-      .lang-text p {
-        color: #636e72;
-        font-size: 1.1rem;
-        line-height: 1.8;
+        position: relative;
+        top: auto;
+        right: auto;
         margin-bottom: 20px;
       }
       
       .img-fluid {
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
+        margin-bottom: 30px;
       }
-      
-      .img-fluid:hover {
-        transform: scale(1.03);
-      }
-      
-      /* Lang text transition effects */
-      .lang-text {
-        position: relative;
-        min-height: 300px;
-        overflow: hidden;
-      }
-      
-      .lang-text div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s ease-in-out;
-        width: 100%;
-      }
-      
-      .lang-text div.active {
-        opacity: 1;
-        visibility: visible;
-        position: relative;
-      }
-      
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .lang-toggle {
-          position: relative;
-          top: auto;
-          right: auto;
-          margin-bottom: 20px;
-        }
-        
-        .img-fluid {
-          margin-bottom: 30px;
-        }
-      }
-    </style>
-  </head>
-  <body>
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header e Hero (omiti aqui para focar na seção About) -->
   
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
-      <nav id="navbar" class="navbar nav-menu">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Lucas Chitolina</h1>
-        <p>I'm a <span class="typed" data-typed-items="Data Analyst, Researcher, Learner"></span></p>
-        <div class="social-links">
-          <a href="https://github.com/Chitolina" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/lucas-chitolina/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+  <main id="main">
+    <!-- Seção About -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <button onclick="toggleLanguage()" class="lang-toggle">Ver em Português</button>
+          <!-- Bloco de texto para o título/descrição -->
+          <div class="lang-text">
+            <div class="lang-en active">
+              <p>
+                With a Bachelor’s degree in Biology and a Master’s in Molecular Biology specializing in computational biology, I possess expertise in data analysis, Python programming, and translating complex results into actionable insights. My academic achievements include successfully defending a thesis and publishing a peer-reviewed 
+                <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">scientific article</a>. Transitioning to the corporate sector, I applied my technical skills as a Data Analyst at Quero-Quero company (where I am working since 3 years), leveraging Python, SQL, and Excel/VBA to automate workflows, process large datasets, and develop internal tools that streamlined operations and empowered data-driven decision-making. Combining analytical rigor with interpersonal abilities, I thrive in dynamic environments where curiosity and self-directed learning are essential. My adaptability has enabled me to deliver innovative solutions across academia and business, consistently bridging technical expertise with strategic goals.
+              </p>
+            </div>
+            <div class="lang-pt">
+              <p>
+                Graduado em Biologia e Mestre em Biologia Molecular com foco em biologia computacional, desenvolvi experiência em análise de dados, programação em Python, interpretação e apresentação de resultados, culminando na defesa da dissertação e publicação de um 
+                <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">artigo científico</a>. Após, atuei por 3 anos com análise de dados na empresa de varejo Quero-Quero, onde utilizei Python, SQL e Excel/VBA para automatizar rotinas, tratar grandes volumes de dados e criar ferramentas internas, otimizando processos e fornecendo suporte analítico para decisões estratégicas. Essa trajetória me permitiu aprimorar técnicas analíticas e interpessoais. Curioso e autodidata, acredito que essas características foram essenciais para superar desafios no mestrado e na Quero-Quero, me permitindo encontrar soluções eficazes para os problemas de cada área.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
   
-    <main id="main">
-  
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2>About</h2>
-            <button onclick="toggleLanguage()" class="lang-toggle">Ver em Português</button>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/lucass.png" class="img-fluid" alt="Lucas Chitolina" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Data Analyst &amp; Researcher</h3>
+            <!-- Bloco de texto para detalhes -->
             <div class="lang-text">
               <div class="lang-en active">
                 <p>
-                  With a Bachelor’s degree in Biology and a Master’s in Molecular Biology specializing in computational biology, I possess expertise in data analysis, Python programming, and translating complex results into actionable insights. My academic achievements include successfully defending a thesis and publishing a peer-reviewed 
-                  <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">scientific article</a>. Transitioning to the corporate sector, I applied my technical skills as a Data Analyst at Quero-Quero company (where I am working since 3 years), leveraging Python, SQL, and Excel/VBA to automate workflows, process large datasets, and develop internal tools that streamlined operations and empowered data-driven decision-making. Combining analytical rigor with interpersonal abilities, I thrive in dynamic environments where curiosity and self-directed learning are essential. My adaptability has enabled me to deliver innovative solutions across academia and business, consistently bridging technical expertise with strategic goals.
+                  Passionate about continuous learning and its transformative potential, I initially forged my path in biology. However, driven by a desire to evolve beyond my academic roots, I transitioned into the dynamic field of data analysis. Here, I have dedicated myself to mastering programming languages, designing hands-on projects, and cultivating a robust portfolio—efforts that have unlocked new professional possibilities and sharpened my ability to turn data into actionable solutions.
                 </p>
               </div>
               <div class="lang-pt">
                 <p>
-                  Graduado em Biologia e Mestre em Biologia Molecular com foco em biologia computacional, desenvolvi experiência em análise de dados, programação em Python, interpretação e apresentação de resultados, culminando na defesa da dissertação e publicação de um 
-                  <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">artigo científico</a>. Após, atuei por 3 anos com análise de dados na empresa de varejo Quero-Quero, onde utilizei Python, SQL e Excel/VBA para automatizar rotinas, tratar grandes volumes de dados e criar ferramentas internas, otimizando processos e fornecendo suporte analítico para decisões estratégicas. Essa trajetória me permitiu aprimorar técnicas analíticas e interpessoais. Curioso e autodidata, acredito que essas características foram essenciais para superar desafios no mestrado e na Quero-Quero, me permitindo encontrar soluções eficazes para os problemas de cada área.
+                  Sou movido pela paixão pelo aprendizado contínuo e seu poder transformador. Minha jornada começou na biologia, mas, ao buscar novos horizontes além da academia, mergulhei no universo da análise de dados. Desde então, tenho me dedicado a dominar linguagens de programação, desenvolver projetos práticos e construíir um portfólio relevante. Iniciativas estas que ampliaram minhas oportunidades profissionais e reforçaram minha capacidade de transformar dados em soluções estratégicas.
                 </p>
               </div>
             </div>
           </div>
-  
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="assets/img/lucass.png" class="img-fluid" alt="Lucas Chitolina" />
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>Data Analyst &amp; Researcher</h3>
-              <div class="lang-text">
-                <div class="lang-en active">
-                  <p>
-                    Passionate about continuous learning and its transformative potential, I initially forged my path in biology. However, driven by a desire to evolve beyond my academic roots, I transitioned into the dynamic field of data analysis. Here, I have dedicated myself to mastering programming languages, designing hands-on projects, and cultivating a robust portfolio—efforts that have unlocked new professional possibilities and sharpened my ability to turn data into actionable solutions.
-                  </p>
-                </div>
-                <div class="lang-pt">
-                  <p>
-                    Sou movido pela paixão pelo aprendizado contínuo e seu poder transformador. Minha jornada começou na biologia, mas, ao buscar novos horizontes além da academia, mergulhei no universo da análise de dados. Desde então, tenho me dedicado a dominar linguagens de programação, desenvolver projetos práticos e construíir um portfólio relevante. Iniciativas estas que ampliaram minhas oportunidades profissionais e reforçaram minha capacidade de transformar dados em soluções estratégicas.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
         </div>
-      </section>
   
-    </main>
+      </div>
+    </section>
+  </main>
   
-    <script>
-      function toggleLanguage() {
-        const toggleBtn = document.querySelector('.lang-toggle');
-        const sections = document.querySelectorAll('.lang-text');
-        
-        sections.forEach(section => {
-          const en = section.querySelector('.lang-en');
-          const pt = section.querySelector('.lang-pt');
-          if (en && pt) {
-            en.classList.toggle('active');
-            pt.classList.toggle('active');
-          }
-        });
-    
-        // Atualiza o texto do botão
-        if (toggleBtn.textContent.includes('Português')) {
-          toggleBtn.textContent = 'View in English';
-        } else {
-          toggleBtn.textContent = 'Ver em Português';
+  <!-- Script para alternar os idiomas -->
+  <script>
+    function toggleLanguage() {
+      const toggleBtn = document.querySelector('.lang-toggle');
+      // Seleciona todos os blocos de textos de idiomas
+      const sections = document.querySelectorAll('.lang-text');
+      
+      sections.forEach(section => {
+        const en = section.querySelector('.lang-en');
+        const pt = section.querySelector('.lang-pt');
+        if (en && pt) {
+          en.classList.toggle('active');
+          pt.classList.toggle('active');
         }
+      });
+  
+      // Atualiza o texto do botão
+      if (toggleBtn.textContent.includes('Português')) {
+        toggleBtn.textContent = 'View in English';
+      } else {
+        toggleBtn.textContent = 'Ver em Português';
       }
-    </script>
-    
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
-  </html>
+    }
+  </script>
+  
+  <!-- Vendor JS Files (por exemplo, Bootstrap) -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
 
@@ -430,8 +375,6 @@
           <button type="action">
             <a href="https://github.com/Chitolina/Certificados/tree/main/Certificados" 
                class="lang-en active" title="Certificates">Certificates</a>
-            <a href="https://github.com/Chitolina/Certificados/tree/main/Certificados" 
-               class="lang-pt" title="Certificados">Certificados</a>
           </button>
         </div>
       </div>
