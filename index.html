@@ -179,11 +179,34 @@
             </div>
           </div>
         </div>
-  
+
+
+        
         <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/lucass.png" class="img-fluid" alt="Lucas Chitolina" />
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="photo-container">
+              <img src="assets/img/lucass.png" class="img-fluid" alt="Lucas Chitolina" />
+            </div>
           </div>
+        </div>
+        
+        <style>
+          .photo-container {
+            width: 150px; /* Ajuste o tamanho da foto conforme necessário */
+            height: 150px; /* Tamanho igual ao da largura para manter o formato arredondado */
+            overflow: hidden; /* Garante que a foto seja cortada no formato correto */
+            border-radius: 50%; /* Deixa a foto com corte arredondado */
+          }
+        
+          .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a imagem cobrir todo o espaço, mantendo o corte adequado */
+          }
+        </style>
+
+
+        
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Data Analyst &amp; Researcher</h3>
             <div class="lang-text">
