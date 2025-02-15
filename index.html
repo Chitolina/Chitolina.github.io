@@ -119,11 +119,62 @@
 <!-- Seção Hero -->
 <section id="hero" class="d-flex align-items-center" style="background: url('assets/img/second.jpg') no-repeat center center; background-size: cover;">
   <div class="container text-center text-white">
-    <h1>Bem-vindo ao Meu Portfólio</h1>
-    <h2>Sou Lucas Chitolina, Analista de Dados & Pesquisador</h2>
-    <a href="#about" class="btn btn-primary">Saiba Mais</a>
+    <h1 id="typed-text"></h1>
+    <div class="navigation-icons">
+      <a href="#about" class="icon-link"><i class="bi bi-person"></i></a>
+      <a href="#services" class="icon-link"><i class="bi bi-briefcase"></i></a>
+      <a href="#contact" class="icon-link"><i class="bi bi-envelope"></i></a>
+    </div>
   </div>
 </section>
+
+  <!-- Estilos Adicionais -->
+<style>
+  /* Efeito de digitação */
+  #typed-text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  /* Ícones de Navegação */
+  .navigation-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .icon-link {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .icon-link:hover {
+    color: #007bff;
+  }
+</style>
+
+  <!-- Script para Efeito de Digitação -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const typedText = document.getElementById('typed-text');
+    const text = "Bem-vindo ao meu portfólio!";
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        typedText.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100);
+      }
+    }
+
+    type();
+  });
+</script>
   
   <main id="main">
     <!-- Seção About -->
