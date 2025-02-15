@@ -179,34 +179,11 @@
             </div>
           </div>
         </div>
-
-
-        
+  
         <div class="row">
-          <div class="col-lg-4 d-flex justify-content-center">
-            <div class="photo-container">
-              <img src="assets/img/lucass.png" class="img-fluid" alt="Lucas Chitolina" />
-            </div>
+          <div class="col-lg-4">
+            <img src="assets/img/lucass.png" class="img-fluid" alt="Lucas Chitolina" />
           </div>
-        </div>
-        
-        <style>
-          .photo-container {
-            width: 150px; /* Ajuste o tamanho da foto conforme necessário */
-            height: 150px; /* Tamanho igual ao da largura para manter o formato arredondado */
-            overflow: hidden; /* Garante que a foto seja cortada no formato correto */
-            border-radius: 50%; /* Deixa a foto com corte arredondado */
-          }
-        
-          .photo-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Faz a imagem cobrir todo o espaço, mantendo o corte adequado */
-          }
-        </style>
-
-
-        
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Data Analyst &amp; Researcher</h3>
             <div class="lang-text">
@@ -339,19 +316,18 @@
     border-radius: 20px;
     overflow: hidden;
   }
-
   .progress.modern .progress-bar {
     height: 12px;
-    background-image: linear-gradient(to right, #9c27b0, #6a1b9a); /* Degradê de roxo para violeta */
+    background-image: linear-gradient(to right, #4CAF50, #8BC34A);
     transition: width 1s ease-in-out;
   }
-
   .skill {
     font-weight: bold;
     font-size: 1.1rem;
     color: #333;
   }
 </style>
+
 
 <!-- ======= Resume Section ======= -->
 <section id="resume" class="resume">
@@ -595,27 +571,29 @@
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2>Contact</h2>
-      <p>If you’d like to get in touch, feel free to send me a message via WhatsApp!</p>
+      <p>If you’d like to get in touch, send me a message via WhatsApp!</p>
     </div>
 
     <div class="row mt-1">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <div class="info">
           <div class="address">
-            <i class="bi bi-geo-alt" style="color: #00bcd4;"></i>
+            <i class="bi bi-geo-alt"></i>
             <h4>Location:</h4>
             <p>João Telles, Bom Fim, Porto Alegre-RS</p>
+          </div>
+
+          <div class="whatsapp">
+            <i class="bi bi-whatsapp"></i>
+            <h4>WhatsApp:</h4>
+            <!-- Use o link no formato wa.me sem espaços nem símbolos extras -->
+            <p><a href="https://wa.me/5551996052171" target="_blank">+55 (51) 99605-2171</a></p>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6 mt-5 mt-lg-0">
-        <div class="whatsapp">
-          <i class="bi bi-whatsapp" style="color: #00bcd4;"></i>
-          <h4>WhatsApp:</h4>
-          <p><a href="https://wa.me/5551996052171" target="_blank" style="color: #00bcd4;">+55 (51) 99605-2171</a></p>
-        </div>
-        <div class="contact-button text-center mt-4">
+      <div class="col-lg-8 mt-5 mt-lg-0">
+        <div class="contact-button text-center">
           <a href="https://wa.me/5551996052171" class="btn btn-success" target="_blank">
             <i class="bi bi-whatsapp"></i> Contact Me on WhatsApp
           </a>
@@ -624,38 +602,6 @@
     </div>
   </div>
 </section>
-
-<style>
-  .info {
-    margin-bottom: 20px;
-  }
-
-  .info i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-  }
-
-  .whatsapp i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-  }
-
-  .contact-button a {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .contact-button i {
-    margin-right: 8px;
-  }
-
-  p a {
-    font-weight: bold;
-    text-decoration: none;
-  }
-</style>
-
 
 
 
