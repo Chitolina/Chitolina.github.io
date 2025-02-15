@@ -71,153 +71,88 @@
 
   <main id="main">
 
-<!-- ======= About Section ======= -->
-    <style>
-/* Custom About Section Styling */
-.about {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 80px 0;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  color: #2d3436;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.section-title h2:after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: #007bff;
-}
-
-.lang-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,123,255,0.2);
-}
-
-.lang-toggle:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-}
-
-.content h3 {
-  color: #2d3436;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.lang-text p {
-  color: #636e72;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.img-fluid {
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.img-fluid:hover {
-  transform: scale(1.03);
-}
-
-/* Text transition effects */
-.lang-text {
-  position: relative;
-  min-height: 200px;
-}
-
-.lang-text div {
-  position: absolute;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  transform: translateY(20px);
-  width: 100%;
-}
-
-.lang-text div.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .lang-toggle {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-bottom: 20px;
-  }
-  
-  .img-fluid {
-    margin-bottom: 30px;
-  }
-}
-</style>
-<section id="about" class="about">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>About</h2>
-      <button onclick="toggleLanguage()" class="lang-toggle">Ver em Português</button>
-      <div class="lang-text">
-        <div class="lang-en active">
-          <p>With a Bachelor’s degree in Biology and a Master’s in Molecular Biology specializing in computational biology, I possess expertise in data analysis, Python programming, and translating complex results into actionable insights. My academic achievements include successfully defending a thesis and publishing a peer-reviewed <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">scientific article</a>.
-          Transitioning to the corporate sector,  I applied my technical skills as a Data Analyst at Quero-Quero company (where I am working since 3 years), leveraging Python, SQL, and Excel/VBA to automate workflows, process large datasets, and develop internal tools that streamlined operations and empowered data-driven decision-making.
-          Combining analytical rigor with interpersonal abilities, I thrive in dynamic environments where curiosity and self-directed learning are essential. My adaptability has enabled me to deliver innovative solutions across academia and business, consistently bridging technical expertise with strategic goals.</p>
-        </div>
-        <div class="lang-pt">
-          <p> Graduado em Biologia e Mestre em Biologia Molecular com foco em biologia computacional, desenvolvi experiência em análise de dados, programação em Python, interpretação e apresentação de resultados, culminando na defesa da dissertação e publicação de um <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">artigo científico</a>.
-        Após, atuei por 3 anos com análise de dados na empresa de varejo Quero-Quero, onde utilizei Python, SQL e Excel/VBA para automatizar rotinas, tratar grandes volumes de dados e criar ferramentas internas, otimizando processos e fornecendo suporte analítico para decisões estratégicas.
-        Essa trajetória me permitiu aprimorar técnicas analíticas e interpessoais. Curioso e autodidata, acredito que essas características foram essenciais para superar desafios no mestrado e na Quero-Quero, me permitindo encontrar soluções eficazes para os problemas de cada área.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="assets/img/lucass.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-8 pt-4 pt-lg-0 content">
-        <h3>Data Analyst &amp; Researcher</h3>
-        <div class="lang-text">
-          <div class="lang-en active">
-            <p>Passionate about continuous learning and its transformative potential, I initially forged my path in biology. However, driven by a desire to evolve beyond my academic roots, I transitioned into the dynamic field of data analysis. Here, I have dedicated myself to mastering programming languages, designing hands-on projects, and cultivating a robust portfolio—efforts, that have unlocked new professional possibilities and sharpened my ability to turn data into actionable solutions.</p>
-          </div>
-          <div class="lang-pt">
-            <p>Sou movido pela paixão pelo aprendizado contínuo e seu poder transformador. Minha jornada começou na biologia, mas, ao buscar novos horizontes além da academia, mergulhei no universo da análise de dados. Desde então, tenho me dedicado a dominar linguagens de programação, desenvolver projetos práticos e construíir um portfólio relevante. Iniciativas estas que ampliaram minhas oportunidades profissionais e reforçaram minha capacidade de transformar dados em soluções estratégicas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Section</title>
+  <style>
+    /* Custom About Section Styling */
+    .about {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 80px 0;
+      position: relative;
+    }
+    
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #2d3436;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: #007bff;
+    }
+    
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,123,255,0.2);
+      cursor: pointer;
+    }
+    
+    .lang-toggle:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,123,255,0.3);
+    }
+    
+    .content h3 {
+      color: #2d3436;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    
+    .lang-text p {
+      color: #636e72;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .img-fluid {
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .img-fluid:hover {
+      transform: scale(1.03);
+    }
+    
+    /* Lang text transition effects */
     .lang-text {
       position: relative;
       min-height: 300px; /* Ajuste conforme necessário */
+      overflow: hidden;
     }
     
     .lang-text div {
@@ -235,12 +170,72 @@
       visibility: visible;
       position: relative;
     }
-    .lang-text {
-     overflow: hidden;
-    }
-    </style>
     
-    <script>
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .lang-toggle {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 20px;
+      }
+      
+      .img-fluid {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>About</h2>
+        <button onclick="toggleLanguage()" class="lang-toggle">Ver em Português</button>
+        <div class="lang-text">
+          <div class="lang-en active">
+            <p>
+              With a Bachelor’s degree in Biology and a Master’s in Molecular Biology specializing in computational biology, I possess expertise in data analysis, Python programming, and translating complex results into actionable insights. My academic achievements include successfully defending a thesis and publishing a peer-reviewed 
+              <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">scientific article</a>. Transitioning to the corporate sector, I applied my technical skills as a Data Analyst at Quero-Quero company (where I am working since 3 years), leveraging Python, SQL, and Excel/VBA to automate workflows, process large datasets, and develop internal tools that streamlined operations and empowered data-driven decision-making. Combining analytical rigor with interpersonal abilities, I thrive in dynamic environments where curiosity and self-directed learning are essential. My adaptability has enabled me to deliver innovative solutions across academia and business, consistently bridging technical expertise with strategic goals.
+            </p>
+          </div>
+          <div class="lang-pt">
+            <p>
+              Graduado em Biologia e Mestre em Biologia Molecular com foco em biologia computacional, desenvolvi experiência em análise de dados, programação em Python, interpretação e apresentação de resultados, culminando na defesa da dissertação e publicação de um 
+              <a href="https://link.springer.com/article/10.1007/s00894-022-05135-6" target="_blank" rel="noopener noreferrer">artigo científico</a>. Após, atuei por 3 anos com análise de dados na empresa de varejo Quero-Quero, onde utilizei Python, SQL e Excel/VBA para automatizar rotinas, tratar grandes volumes de dados e criar ferramentas internas, otimizando processos e fornecendo suporte analítico para decisões estratégicas. Essa trajetória me permitiu aprimorar técnicas analíticas e interpessoais. Curioso e autodidata, acredito que essas características foram essenciais para superar desafios no mestrado e na Quero-Quero, me permitindo encontrar soluções eficazes para os problemas de cada área.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/img/lucass.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <h3>Data Analyst &amp; Researcher</h3>
+          <div class="lang-text">
+            <div class="lang-en active">
+              <p>
+                Passionate about continuous learning and its transformative potential, I initially forged my path in biology. However, driven by a desire to evolve beyond my academic roots, I transitioned into the dynamic field of data analysis. Here, I have dedicated myself to mastering programming languages, designing hands-on projects, and cultivating a robust portfolio—efforts that have unlocked new professional possibilities and sharpened my ability to turn data into actionable solutions.
+              </p>
+            </div>
+            <div class="lang-pt">
+              <p>
+                Sou movido pela paixão pelo aprendizado contínuo e seu poder transformador. Minha jornada começou na biologia, mas, ao buscar novos horizontes além da academia, mergulhei no universo da análise de dados. Desde então, tenho me dedicado a dominar linguagens de programação, desenvolver projetos práticos e construíir um portfólio relevante. Iniciativas estas que ampliaram minhas oportunidades profissionais e reforçaram minha capacidade de transformar dados em soluções estratégicas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <script>
     function toggleLanguage() {
       const toggleBtn = document.querySelector('.lang-toggle');
       const sections = document.querySelectorAll('.lang-text');
@@ -248,15 +243,23 @@
       sections.forEach(section => {
         const en = section.querySelector('.lang-en');
         const pt = section.querySelector('.lang-pt');
-        
-        [en, pt].forEach(el => el.classList.toggle('active'));
+        if (en && pt) {
+          en.classList.toggle('active');
+          pt.classList.toggle('active');
+        }
       });
-    
-      toggleBtn.textContent = toggleBtn.textContent.includes('Português') 
-        ? 'View in English' 
-        : 'Ver em Português';
+  
+      // Atualiza o texto do botão
+      if (toggleBtn.textContent.includes('Português')) {
+        toggleBtn.textContent = 'View in English';
+      } else {
+        toggleBtn.textContent = 'Ver em Português';
+      }
     }
-    </script>
+  </script>
+
+</body>
+</html>
 
 
     <!-- ======= Skills Section ======= -->
