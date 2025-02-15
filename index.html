@@ -514,72 +514,81 @@
 </section><!-- End Portfolio Section -->
 
    
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, send me a message via WhatsApp!</p>
+    </div>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>João Telles, Bom Fim, Porto Alegre-RS</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>lucaschito.dados@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>55 (51) 996052171</p>
-              </div>
-
-            </div>
-
+    <div class="row mt-1">
+      <div class="col-lg-4">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>João Telles, Bom Fim, Porto Alegre-RS</p>
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
+          <div class="whatsapp">
+            <i class="bi bi-whatsapp"></i>
+            <h4>WhatsApp:</h4>
+            <!-- Use o link no formato wa.me sem espaços nem símbolos extras -->
+            <p><a href="https://wa.me/5551996052171" target="_blank">+55 (51) 99605-2171</a></p>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+
+      <div class="col-lg-8 mt-5 mt-lg-0">
+        <div class="contact-button text-center">
+          <a href="https://wa.me/5551996052171" class="btn btn-success" target="_blank">
+            <i class="bi bi-whatsapp"></i> Contact Me on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+.contact .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact .btn-success {
+  background: #25D366; /* Cor típica do WhatsApp */
+  border: none;
+  color: #fff;
+}
+
+.contact .btn-success:hover {
+  background: #1DA851;
+}
+
+/* Ajuste opcional para os ícones e links */
+.contact .info i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #25D366;
+}
+.contact .info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+var typed = new Typed('.typed', {
+  strings: ["Data Analyst", "Researcher", "Learner"],
+  typeSpeed: 100,    // Velocidade de digitação (em ms)
+  backSpeed: 50,     // Velocidade de deleção (em ms)
+  backDelay: 2000,   // Tempo de espera após a palavra ser escrita (em ms)
+  loop: true
+});
 
   </main><!-- End #main -->
 
