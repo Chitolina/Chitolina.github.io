@@ -47,89 +47,121 @@
     }
 
     /* Estilos para a seção About */
-    .about {
-      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-      padding: 80px 0;
-      position: relative;
-    }
-    .section-title h2 {
-      font-size: 2.5rem;
-      color: #2d3436;
-      position: relative;
-      margin-bottom: 30px;
-    }
-    .section-title h2:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 3px;
-      background: #007bff;
-    }
-    .lang-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,123,255,0.2);
-      cursor: pointer;
-    }
-    .lang-toggle:hover {
-      background: #0056b3;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-    }
-    .content h3 {
-      color: #2d3436;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-    .lang-text p {
-      color: #636e72;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    .img-fluid {
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .img-fluid:hover {
-      transform: scale(1.03);
-    }
-    /* Controle de exibição dos textos de idiomas */
-    .lang-text div {
-      display: none;
-      transition: all 0.4s ease-in-out;
-    }
-    .lang-text div.active {
-      display: block;
-    }
-    /* Ajustes responsivos */
-    @media (max-width: 768px) {
-      .lang-toggle {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin-bottom: 20px;
-      }
-      .img-fluid {
-        margin-bottom: 30px;
-      }
-    }
-  </style>
-</head>
-<body>
+.about {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #2d3436;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #007bff;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,123,255,0.2);
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,123,255,0.3);
+}
+
+.content h3 {
+  color: #2d3436;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.lang-text p {
+  color: #636e72;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.03);
+}
+
+/* Layout Flexbox para imagem e texto lado a lado */
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .col-lg-6 {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about .col-lg-6 img {
+  width: 100%;
+  max-width: 400px; /* Ajuste a largura conforme necessário */
+}
+
+/* Controle de exibição dos textos de idiomas */
+.lang-text div {
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.lang-text div.active {
+  display: block;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lang-toggle {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 20px;
+  }
+
+  .img-fluid {
+    margin-bottom: 30px;
+  }
+}
+
 
   <!-- Header (menu de navegação) -->
   <header id="header" class="d-flex flex-column justify-content-center">
@@ -219,11 +251,12 @@
   <script>
     var typed = new Typed('.typed', {
       strings: ["Data Analyst", "Researcher", "Learner"],
-      typeSpeed: 100,      // Velocidade de digitação mais lenta
-      backSpeed: 50,       // Velocidade de deleção mais lenta
-      backDelay: 1500,     // Tempo maior para manter cada palavra
-      startDelay: 1000,    // Pequeno atraso antes de começar a digitar
-      loop: true
+      typeSpeed: 120,      // Velocidade de digitação mais controlada
+      backSpeed: 80,       // Velocidade de deleção mais suave
+      backDelay: 2000,     // Delay maior para permanecer com a palavra
+      startDelay: 800,     // Pequeno atraso antes de começar a digitar
+      loop: true,
+      showCursor: true     // Garante que o cursor seja mostrado
     });
   </script>
 
