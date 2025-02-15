@@ -316,18 +316,19 @@
     border-radius: 20px;
     overflow: hidden;
   }
+
   .progress.modern .progress-bar {
     height: 12px;
-    background-image: linear-gradient(to right, #4CAF50, #8BC34A);
+    background-image: linear-gradient(to right, #9c27b0, #6a1b9a); /* Degradê de roxo para violeta */
     transition: width 1s ease-in-out;
   }
+
   .skill {
     font-weight: bold;
     font-size: 1.1rem;
     color: #333;
   }
 </style>
-
 
 <!-- ======= Resume Section ======= -->
 <section id="resume" class="resume">
@@ -571,29 +572,27 @@
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2>Contact</h2>
-      <p>If you’d like to get in touch, send me a message via WhatsApp!</p>
+      <p>If you’d like to get in touch, feel free to send me a message via WhatsApp!</p>
     </div>
 
     <div class="row mt-1">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <div class="info">
           <div class="address">
-            <i class="bi bi-geo-alt"></i>
+            <i class="bi bi-geo-alt" style="color: #00bcd4;"></i>
             <h4>Location:</h4>
             <p>João Telles, Bom Fim, Porto Alegre-RS</p>
-          </div>
-
-          <div class="whatsapp">
-            <i class="bi bi-whatsapp"></i>
-            <h4>WhatsApp:</h4>
-            <!-- Use o link no formato wa.me sem espaços nem símbolos extras -->
-            <p><a href="https://wa.me/5551996052171" target="_blank">+55 (51) 99605-2171</a></p>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-8 mt-5 mt-lg-0">
-        <div class="contact-button text-center">
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <div class="whatsapp">
+          <i class="bi bi-whatsapp" style="color: #00bcd4;"></i>
+          <h4>WhatsApp:</h4>
+          <p><a href="https://wa.me/5551996052171" target="_blank" style="color: #00bcd4;">+55 (51) 99605-2171</a></p>
+        </div>
+        <div class="contact-button text-center mt-4">
           <a href="https://wa.me/5551996052171" class="btn btn-success" target="_blank">
             <i class="bi bi-whatsapp"></i> Contact Me on WhatsApp
           </a>
@@ -602,6 +601,38 @@
     </div>
   </div>
 </section>
+
+<style>
+  .info {
+    margin-bottom: 20px;
+  }
+
+  .info i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+
+  .whatsapp i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+
+  .contact-button a {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .contact-button i {
+    margin-right: 8px;
+  }
+
+  p a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
+
 
 
 
