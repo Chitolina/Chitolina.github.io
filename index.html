@@ -247,54 +247,86 @@
       }
     }
 
-    // Inicializa as animações e o efeito de digitação
-    AOS.init();
-    var typed = new Typed('.typed', {
-      strings: ["Data Analyst", "Researcher", "Learner"],
-      typeSpeed: 200,
-      backSpeed: 100,
-      loop: true
+
     });
   </script>
 </body>
 </html>
-
 <!-- ======= Skills Section ======= -->
 <section id="skills" class="skills section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2>Skills</h2>
-      <p>Here’s a ranked showcase of my top technical skills:</p>
+      <p>Explore my technical and hard skills ranking:</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Skill Card Template -->
-      <div class="bg-white rounded-2xl shadow-lg p-4 border border-gray-200 transition-transform hover:scale-105">
-        <h4 class="font-semibold text-lg">GIT/GITHUB</h4>
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-          <div class="bg-blue-500 h-2.5 rounded-full transition-all" style="width: 80%;"></div>
+    <div class="row skills-content">
+      <div class="col-lg-6">
+        <div class="progress modern">
+          <span class="skill">GIT/GITHUB <i class="val">GOOD</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width:80%"></div>
+          </div>
         </div>
-        <p class="text-gray-600 mt-2">Level: Good</p>
+
+        <div class="progress modern">
+          <span class="skill">OFFICE <i class="val">GOOD</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width:75%"></div>
+          </div>
+        </div>
+
+        <div class="progress modern">
+          <span class="skill">Data Analysis <i class="val">GOOD</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width:75%"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="bg-white rounded-2xl shadow-lg p-4 border border-gray-200 transition-transform hover:scale-105">
-        <h4 class="font-semibold text-lg">PYTHON</h4>
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-          <div class="bg-green-500 h-2.5 rounded-full transition-all" style="width: 80%;"></div>
+      <div class="col-lg-6">
+        <div class="progress modern">
+          <span class="skill">PYTHON <i class="val">GOOD</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width:80%"></div>
+          </div>
         </div>
-        <p class="text-gray-600 mt-2">Level: Good</p>
-      </div>
 
-      <div class="bg-white rounded-2xl shadow-lg p-4 border border-gray-200 transition-transform hover:scale-105">
-        <h4 class="font-semibold text-lg">SQL</h4>
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-          <div class="bg-yellow-500 h-2.5 rounded-full transition-all" style="width: 70%;"></div>
+        <div class="progress modern">
+          <span class="skill">SQL <i class="val">INTERMEDIATE/GOOD</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width:70%"></div>
+          </div>
         </div>
-        <p class="text-gray-600 mt-2">Level: Intermediate/Good</p>
+
+        <div class="progress modern">
+          <span class="skill">CLOUD <i class="val">BEGINNER</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width:55%"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .progress.modern .progress-bar-wrap {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .progress.modern .progress-bar {
+    height: 12px;
+    background-image: linear-gradient(to right, #4CAF50, #8BC34A);
+    transition: width 1s ease-in-out;
+  }
+  .skill {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+  }
+</style>
 
 
 <!-- ======= Resume Section ======= -->
