@@ -47,121 +47,89 @@
     }
 
     /* Estilos para a seção About */
-.about {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 80px 0;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  color: #2d3436;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.section-title h2:after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: #007bff;
-}
-
-.lang-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,123,255,0.2);
-  cursor: pointer;
-}
-
-.lang-toggle:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-}
-
-.content h3 {
-  color: #2d3436;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.lang-text p {
-  color: #636e72;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.img-fluid {
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.img-fluid:hover {
-  transform: scale(1.03);
-}
-
-/* Layout Flexbox para imagem e texto lado a lado */
-.about .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about .col-lg-6 {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.about .col-lg-6 img {
-  width: 100%;
-  max-width: 400px; /* Ajuste a largura conforme necessário */
-}
-
-/* Controle de exibição dos textos de idiomas */
-.lang-text div {
-  display: none;
-  transition: all 0.4s ease-in-out;
-}
-
-.lang-text div.active {
-  display: block;
-}
-
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-  .about .row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .lang-toggle {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-bottom: 20px;
-  }
-
-  .img-fluid {
-    margin-bottom: 30px;
-  }
-}
-
+    .about {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 80px 0;
+      position: relative;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #2d3436;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: #007bff;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,123,255,0.2);
+      cursor: pointer;
+    }
+    .lang-toggle:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,123,255,0.3);
+    }
+    .content h3 {
+      color: #2d3436;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .lang-text p {
+      color: #636e72;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .img-fluid {
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .img-fluid:hover {
+      transform: scale(1.03);
+    }
+    /* Controle de exibição dos textos de idiomas */
+    .lang-text div {
+      display: none;
+      transition: all 0.4s ease-in-out;
+    }
+    .lang-text div.active {
+      display: block;
+    }
+    /* Ajustes responsivos */
+    @media (max-width: 768px) {
+      .lang-toggle {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 20px;
+      }
+      .img-fluid {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
 
   <!-- Header (menu de navegação) -->
   <header id="header" class="d-flex flex-column justify-content-center">
@@ -221,7 +189,23 @@
             </div>
           </div>
         </div>
-    
+        
+        <style>
+          .photo-container {
+            width: 150px; /* Ajuste o tamanho da foto conforme necessário */
+            height: 150px; /* Tamanho igual ao da largura para manter o formato arredondado */
+            overflow: hidden; /* Garante que a foto seja cortada no formato correto */
+            border-radius: 50%; /* Deixa a foto com corte arredondado */
+          }
+        
+          .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a imagem cobrir todo o espaço, mantendo o corte adequado */
+          }
+        </style>
+
+
         
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Data Analyst &amp; Researcher</h3>
@@ -251,14 +235,14 @@
   <script>
     var typed = new Typed('.typed', {
       strings: ["Data Analyst", "Researcher", "Learner"],
-      typeSpeed: 120,      // Velocidade de digitação mais controlada
-      backSpeed: 80,       // Velocidade de deleção mais suave
-      backDelay: 2000,     // Delay maior para permanecer com a palavra
-      startDelay: 800,     // Pequeno atraso antes de começar a digitar
-      loop: true,
-      showCursor: true     // Garante que o cursor seja mostrado
+      typeSpeed: 150,    // Digitação mais lenta
+      backSpeed: 80,     // Deleção mais suave
+      backDelay: 2000,   // Mais tempo com cada palavra exibida
+      startDelay: 600,   // Pequeno atraso antes de iniciar
+      loop: true
     });
   </script>
+
 
   </body>
   </html>
@@ -574,7 +558,36 @@
         </div>
       </div>
 
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/NLP.jpg" class="img-fluid" alt="NLP Project">
+          <div class="portfolio-info">
+            <h4>Natural Language Processing</h4>
+            <p>Text Analysis and NLP Techniques</p>
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/NLP.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NLP Project"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details4.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/TW.jpg" class="img-fluid" alt="NLP with Disaster Tweets">
+          <div class="portfolio-info">
+            <h4>Disaster Tweets NLP</h4>
+            <p>Analyzing Tweets Using NLP Techniques</p>
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/TW.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NLP with Disaster Tweets"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details5.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Portfolio Section -->
 
    
 <!-- ======= Contact Section ======= -->
@@ -602,7 +615,10 @@
           <h4>WhatsApp:</h4>
           <p><a href="https://wa.me/5551996052171" target="_blank" style="color: #00bcd4;">+55 (51) 99605-2171</a></p>
         </div>
-
+        <div class="contact-button text-center mt-4">
+          <a href="https://wa.me/5551996052171" class="btn btn-success" target="_blank">
+            <i class="bi bi-whatsapp"></i> Contact Me on WhatsApp
+          </a>
         </div>
       </div>
     </div>
