@@ -214,56 +214,49 @@
   </div>
 </section>
 
-<style>
-.lang-text div {
-  transition: opacity 0.4s ease-in-out;
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-}
-
-.lang-text div.active {
-  position: relative;
-  opacity: 1;
-}
-
-.lang-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.lang-toggle:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-</style>
-
-<script>
-function toggleLanguage() {
-  const toggleBtn = document.querySelector('.lang-toggle');
-  const enElements = document.querySelectorAll('.lang-en');
-  const ptElements = document.querySelectorAll('.lang-pt');
-  
-  // Toggle visibility
-  enElements.forEach(el => el.classList.toggle('active'));
-  ptElements.forEach(el => el.classList.toggle('active'));
-  
-  // Update button text
-  toggleBtn.textContent = toggleBtn.textContent.includes('Português') 
-    ? 'View in English' 
-    : 'Ver em Português';
-}
-</script>
+    <style>
+    .lang-text {
+      position: relative;
+      min-height: 300px; /* Ajuste conforme necessário */
+    }
+    
+    .lang-text div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease-in-out;
+      width: 100%;
+    }
+    
+    .lang-text div.active {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+    }
+    .lang-text {
+     overflow: hidden;
+    }
+    </style>
+    
+    <script>
+    function toggleLanguage() {
+      const toggleBtn = document.querySelector('.lang-toggle');
+      const sections = document.querySelectorAll('.lang-text');
+      
+      sections.forEach(section => {
+        const en = section.querySelector('.lang-en');
+        const pt = section.querySelector('.lang-pt');
+        
+        [en, pt].forEach(el => el.classList.toggle('active'));
+      });
+    
+      toggleBtn.textContent = toggleBtn.textContent.includes('Português') 
+        ? 'View in English' 
+        : 'Ver em Português';
+    }
+    </script>
 
 
     <!-- ======= Skills Section ======= -->
