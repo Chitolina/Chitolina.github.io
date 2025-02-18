@@ -304,6 +304,43 @@
   .resume-collapsible {
     margin-top: 2rem;
   }
+ /* Estilo para o bloco de resumo de projetos */
+  .project-summary {
+    max-width: 800px; /* Define a largura máxima para o texto, tornando-o mais enxuto */
+    margin: 0 auto;   /* Centraliza o conteúdo */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  .project-summary h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px;
+  }
+
+  .project-summary ul {
+    list-style-type: disc; /* Pontinhos padrão nas listas */
+    padding-left: 20px;    /* Recuo para a lista */
+  }
+
+  .project-summary p {
+    margin-bottom: 10px;   /* Espaçamento entre parágrafos */
+  }
+
+  /* Estilo para os filtros, mantendo-os em linha */
+  #portfolio-flters {
+    display: flex; /* Flex para manter os itens em linha */
+    justify-content: center; /* Centraliza os filtros */
+    list-style: none; /* Remove a lista */
+    padding: 0;
+  }
+
+  #portfolio-flters li {
+    margin: 0 10px; /* Adiciona um pequeno espaço entre os itens */
+    cursor: pointer;
+  }
+
+  #portfolio-flters .filter-active {
+    font-weight: bold; /* Destaca o filtro ativo */
+  }
 </style>
 
 <section id="portfolio" class="portfolio section-bg">
@@ -322,11 +359,28 @@
           <li data-filter=".filter-web">Web Scraping</li>
           <li data-filter=".filter-bi">Business Intelligence</li>
           <li data-filter=".filter-ds">Dashboard</li>
-
         </ul>
       </div>
     </div>
 
+    <!-- Resumo de Projetos -->
+    <div class="project-summary">
+      <h2>Data Analysis Projects</h2>
+      <p>Here, I will showcase projects based on public data, as I am unable to share projects from my company due to data protection policies.</p>
+
+      <p>In my professional experience, I have worked extensively on:</p>
+      <ul>
+        <li><strong>Process Automation:</strong> Developing efficient workflows to streamline operations;</li>
+        <li><strong>Performance Analysis of Category Projects:</strong> Evaluating ongoing initiatives to drive strategic improvements;</li>
+        <li><strong>Material-Store Clustering:</strong> Applying data-driven methods to optimize inventory distribution.</li>
+      </ul>
+
+      <p>These projects represent a broader scope of my expertise, and I would be happy to discuss them further in an interview.</p>
+
+      <p>Below, you will find analyses based on public datasets:</p>
+    </div>
+  </div>
+</section>
 
     <!-- Projetos -->
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
