@@ -279,6 +279,7 @@
 
 
 <style>
+  /* Manter estilo para o resumo de projetos */
   .project-summary {
     width: 60%; /* Define a largura da coluna (ajuste conforme necessário) */
     margin: 0 auto; /* Centraliza o conteúdo na página */
@@ -298,6 +299,23 @@
   .project-summary p {
     margin-bottom: 10px;   /* Espaçamento entre parágrafos */
   }
+
+  /* Estilo dos filtros */
+  #portfolio-flters {
+    display: flex; /* Flex para manter os itens em linha */
+    justify-content: center; /* Centraliza os filtros */
+    list-style: none; /* Remove a lista */
+    padding: 0;
+  }
+
+  #portfolio-flters li {
+    margin: 0 10px; /* Adiciona um pequeno espaço entre os itens */
+    cursor: pointer;
+  }
+
+  #portfolio-flters .filter-active {
+    font-weight: bold; /* Destaca o filtro ativo */
+  }
 </style>
 
 <div class="project-summary">
@@ -316,21 +334,19 @@
   <p>Below, you will find analyses based on public datasets:</p>
 </div>
 
+<!-- Filtros -->
+<div class="row">
+  <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+    <ul id="portfolio-flters">
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-app">Data Analysis</li>
+      <li data-filter=".filter-web">Web Scraping</li>
+      <li data-filter=".filter-bi">Business Intelligence</li>
+      <li data-filter=".filter-ds">Dashboard</li>
+    </ul>
+  </div>
+</div>
 
-
-    <!-- Filtros -->
-    <div class="row">
-      <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Data Analysis</li>
-          <li data-filter=".filter-web">Web Scraping</li>
-          <li data-filter=".filter-bi">Business Intelligence</li>
-          <li data-filter=".filter-ds">Dashboard</li>
-
-        </ul>
-      </div>
-    </div>
 
     <!-- Projetos -->
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
