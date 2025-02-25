@@ -9,24 +9,24 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 0;
+            padding: 20px;
             margin: 0;
             background: url('sua-imagem-de-fundo.jpg') no-repeat center center fixed;
             background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .language-selector {
-            background: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
+            background: rgba(255, 255, 255, 0.8);
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .btn {
@@ -56,8 +56,6 @@
 
 </body>
 </html>
-
-
 
 <head>
   <meta charset="utf-8">
