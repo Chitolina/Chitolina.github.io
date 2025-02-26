@@ -1086,35 +1086,4 @@ section {
   font-size: 13px;
 }
 
-/* Estilo para o contêiner dos botões */
-.button-container {
-  display: flex;
-  gap: 10px; /* Espaçamento entre os botões */
-  justify-content: center; /* Centraliza os botões no contêiner */
-}
 
-/* Estilo para os botões */
-.custom-button {
-  background-color: #4CAF50; /* Cor de fundo verde */
-  color: white; /* Texto branco */
-  padding: 10px 20px; /* Preenchimento interno */
-  text-align: center; /* Centraliza o texto */
-  text-decoration: none; /* Remove o sublinhado */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-size: 16px; /* Tamanho do texto */
-  transition: background-color 0.3s ease; /* Animação suave para transição de cor */
-  display: inline-block; /* Permite que o link se comporte como um botão */
-}
-
-/* Efeito de hover para os botões */
-.custom-button:hover {
-  background-color: #45a049; /* Cor mais escura quando o botão é hover */
-}
-
-/* Estilo para dispositivos móveis */
-@media screen and (max-width: 600px) {
-  .button-container {
-    flex-direction: column; /* Coloca os botões em coluna em telas menores */
-    align-items: center; /* Centraliza os botões */
-  }
-}
