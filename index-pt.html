@@ -227,108 +227,111 @@
 
               
             <style>
-              /* Estilização do botão accordion */
-              .accordion {
-                background-color: #007bff;
-                color: white;
-                cursor: pointer;
-                padding: 12px;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-                font-size: 16px;
-                font-weight: bold;
-                border-radius: 5px;
-                transition: 0.4s;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              }
-            
-              .accordion:hover, .accordion.active {
-                background-color: #0056b3;
-              }
-            
-              /* Ícone de expansão */
-              .accordion::after {
-                content: '\002B'; /* Símbolo de + */
-                font-size: 18px;
-                font-weight: bold;
-              }
-            
-              .accordion.active::after {
-                content: '\2212'; /* Símbolo de - */
-              }
-            
-              /* Painel escondido */
-              .panel {
-                display: none;
-                background-color: #f1f1f1;
-                padding: 15px;
-                border-radius: 5px;
-                margin-bottom: 10px;
-              }
-            
-              /* Estilização do texto dentro do painel */
-              .panel p, .panel ul {
-                margin: 5px 0;
-                font-size: 14px;
-                color: #333;
-              }
-            
-              .panel ul {
-                padding-left: 20px;
-              }
-            
-              .panel li {
-                margin-bottom: 5px;
-              }
-            </style>
-            
-            <h4>Experiências Adicionais</h4>
-            
-            <!-- Estagiário em Herpetologia -->
-            <button class="accordion">Estagiário em Herpetologia (2016/2)</button>
-            <div class="panel">
-              <p><em>Museu de Ciência e Tecnologia da PUCRS</em></p>
-              <p>Auxílio em saídas de campo, análise e curadoria de exemplares, prática no uso de chave dicotômica e análise genética com o software Sequencher.</p>
-              <ul>
-                <li>Triagem de espécimes e organização do material coletado;</li>
-                <li>Análise taxonômica e genética;</li>
-                <li>Auxílio em pesquisas de campo.</li>
-              </ul>
-            </div>
-            
-            <!-- Estagiário em Botânica -->
-            <button class="accordion">Estagiário em Botânica (2016/1)</button>
-            <div class="panel">
-              <p><em>Museu de Ciência e Tecnologia da PUCRS</em></p>
-              <p>Curadoria de espécimes, classificação taxonômica e elaboração de material didático.</p>
-              <ul>
-                <li>Montagem, registro e inserção de exsicatas;</li>
-                <li>Atualização do banco de dados do acervo;</li>
-                <li>Atividades educativas.</li>
-              </ul>
-            </div>
-            
-            <!-- Bolsista de Iniciação Científica -->
-            <button class="accordion">Bolsista de Iniciação Científica (2012 - 2013)</button>
-            <div class="panel">
-              <p><em>Laboratório de Ecologia Aquática da PUCRS</em></p>
-              <p>Coleta e caracterização de ciliados suctorianos em lagos de água doce, análise de bioindicadores de ambientes eutróficos e auxílio em pesquisas acadêmicas.</p>
-            </div>
-            
-            <script>
-              var acc = document.getElementsByClassName("accordion");
-              for (var i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  panel.style.display = panel.style.display === "block" ? "none" : "block";
-                });
-              }
-            </script>
+            /* Estilização do botão accordion */
+            .accordion {
+              background-color: #e8e6e3; /* Creme suave */
+              color: #333; /* Cinza escuro */
+              cursor: pointer;
+              padding: 12px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 16px;
+              font-weight: bold;
+              border-radius: 5px;
+              transition: 0.3s;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          
+            .accordion:hover, .accordion.active {
+              background-color: #d6d3ce; /* Tom mais escuro ao passar o mouse */
+            }
+          
+            /* Ícone de expansão */
+            .accordion::after {
+              content: '\002B'; /* Símbolo de + */
+              font-size: 18px;
+              font-weight: bold;
+              color: #555;
+            }
+          
+            .accordion.active::after {
+              content: '\2212'; /* Símbolo de - */
+            }
+          
+            /* Painel escondido */
+            .panel {
+              display: none;
+              background-color: #f7f6f3; /* Fundo creme mais claro */
+              padding: 15px;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              border-left: 3px solid #d6d3ce; /* Detalhe lateral */
+            }
+          
+            /* Estilização do texto dentro do painel */
+            .panel p, .panel ul {
+              margin: 5px 0;
+              font-size: 14px;
+              color: #444; /* Cinza escuro */
+            }
+          
+            .panel ul {
+              padding-left: 20px;
+            }
+          
+            .panel li {
+              margin-bottom: 5px;
+            }
+          </style>
+          
+          <h4>Experiências Adicionais</h4>
+          
+          <!-- Estagiário em Herpetologia -->
+          <button class="accordion">Estagiário em Herpetologia (2016/2)</button>
+          <div class="panel">
+            <p><em>Museu de Ciência e Tecnologia da PUCRS</em></p>
+            <p>Auxílio em saídas de campo, análise e curadoria de exemplares, prática no uso de chave dicotômica e análise genética com o software Sequencher.</p>
+            <ul>
+              <li>Triagem de espécimes e organização do material coletado;</li>
+              <li>Análise taxonômica e genética;</li>
+              <li>Auxílio em pesquisas de campo.</li>
+            </ul>
+          </div>
+          
+          <!-- Estagiário em Botânica -->
+          <button class="accordion">Estagiário em Botânica (2016/1)</button>
+          <div class="panel">
+            <p><em>Museu de Ciência e Tecnologia da PUCRS</em></p>
+            <p>Curadoria de espécimes, classificação taxonômica e elaboração de material didático.</p>
+            <ul>
+              <li>Montagem, registro e inserção de exsicatas;</li>
+              <li>Atualização do banco de dados do acervo;</li>
+              <li>Atividades educativas.</li>
+            </ul>
+          </div>
+          
+          <!-- Bolsista de Iniciação Científica -->
+          <button class="accordion">Bolsista de Iniciação Científica (2012 - 2013)</button>
+          <div class="panel">
+            <p><em>Laboratório de Ecologia Aquática da PUCRS</em></p>
+            <p>Coleta e caracterização de ciliados suctorianos em lagos de água doce, análise de bioindicadores de ambientes eutróficos e auxílio em pesquisas acadêmicas.</p>
+          </div>
+          
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            for (var i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+              });
+            }
+          </script>
+
 
 
 
@@ -347,6 +350,8 @@
             </div>
             </div>
             </section><!-- Fim da Seção de Currículo -->
+
+    
         <style>
           .btn-collapse {
             width: 100%;
