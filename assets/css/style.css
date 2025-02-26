@@ -526,7 +526,7 @@ section {
   padding-left: 0;
 }
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 .resume .resume-item:last-child {
   padding-bottom: 0;
