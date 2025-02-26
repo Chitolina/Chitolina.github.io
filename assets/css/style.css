@@ -531,7 +531,7 @@ section {
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
-.resume .resume-item {
+.resume .resume-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -1085,5 +1085,3 @@ section {
 #footer .credits {
   font-size: 13px;
 }
-
-
