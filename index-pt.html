@@ -336,11 +336,13 @@
           <style>
             .button-container {
               display: flex;
-              flex-direction: column;
+              flex-wrap: wrap;
+              justify-content: center;
               gap: 10px; /* Espaçamento entre os botões */
               margin-top: 20px; /* Distância do parágrafo acima */
+              width: 100%; /* Garante que o container não limite os elementos abaixo */
             }
-          
+                      
             .button a {
               display: flex;
               align-items: center;
@@ -364,7 +366,7 @@
           
             .button {
               display: flex;
-              justify-content: center; /* Centraliza os botões na coluna */
+              justify-content: center; /* Centraliza os botões */
             }
           </style>
           
