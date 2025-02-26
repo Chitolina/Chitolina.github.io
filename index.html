@@ -242,36 +242,114 @@
            <p>With a strong foundation in Python, SQL, VBA, and Microsoft Fabric, I continue to enhance the company's data-driven approach, ensuring that insights translate into strategic actions that boost efficiency and profitability.</p>
           </ul>
         </div>
-        <div class="resume-item">
-          <h4>Herpetology Intern</h4>
-          <h5>2016/2</h5>
-          <p><em>PUCRS Science and Technology Museum</em></p>
-          <ul>
-            <p>Summarized period in aid of field trips, analysis and curation of models collected for the museum's collection, practice in the use of dichotomic key, and genetic sequence analysis through the "Sequencher" software.</p>
-            <li>Tipping of specimens, sorting and separation of collected material;</li>
-            <li>Taxonomic and genetic analysis;</li>
-            <li>Assistance in field research.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h4>Botany Intern</h4>
-          <h5>2016/1</h5>
-          <p><em>PUCRS Science and Technology Museum</em></p>
-          <ul>
-            <p>The main activities at the Herbarium were to exercise the correct curation of specimens, taxonomic classification with a dichotomic key at species level, filling in the museum's database worksheet and preparing didactic material aimed at the public.</p>
-            <li>Application of assembly, registration and insertion of exsiccates;</li>
-            <li>Updating the collection registration database;</li>
-            <li>Educational dynamics.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h4>Undergraduate Research Fellow</h4>
-          <h5>2012 - 2013</h5>
-          <p><em>PUCRS Aquatic Ecology Laboratory</em></p>
-          <ul>
-            <p>Collection and characterization of suctorian ciliates in freshwater lakes of Rio Grande do Sul; the presence of these organisms serves as a bioindicator of a eutrophic aquatic environment. It involved the presentation of scientific initiation seminars, preparation of grant summaries to CNPQ, and assistance to laboratory students.</p>
-          </ul>
-        </div>
+        <style>
+            /* Estilização do botão accordion */
+            .accordion {
+              background-color: #e8e6e3; /* Creme suave */
+              color: #333; /* Cinza escuro */
+              cursor: pointer;
+              padding: 12px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 16px;
+              font-weight: bold;
+              border-radius: 5px;
+              transition: 0.3s;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          
+            .accordion:hover, .accordion.active {
+              background-color: #d6d3ce; /* Tom mais escuro ao passar o mouse */
+            }
+          
+            /* Ícone de expansão */
+            .accordion::after {
+              content: '\002B'; /* Símbolo de + */
+              font-size: 18px;
+              font-weight: bold;
+              color: #555;
+            }
+          
+            .accordion.active::after {
+              content: '\2212'; /* Símbolo de - */
+            }
+          
+            /* Painel escondido */
+            .panel {
+              display: none;
+              background-color: #f7f6f3; /* Fundo creme mais claro */
+              padding: 15px;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              border-left: 3px solid #d6d3ce; /* Detalhe lateral */
+            }
+          
+            /* Estilização do texto dentro do painel */
+            .panel p, .panel ul {
+              margin: 5px 0;
+              font-size: 14px;
+              color: #444; /* Cinza escuro */
+            }
+          
+            .panel ul {
+              padding-left: 20px;
+            }
+          
+            .panel li {
+              margin-bottom: 5px;
+            }
+          </style>
+          
+          <h4>Experiências Adicionais</h4>
+
+
+        
+          <!-- Intern in Herpetology -->
+          <button class="accordion">Intern in Herpetology (2016/2)</button>
+          <div class="panel">
+            <p><em>PUCRS Museum of Science and Technology</em></p>
+            <p>Assistance in field expeditions, specimen analysis and curation, practice in using dichotomous keys, and genetic analysis with Sequencher software.</p>
+            <ul>
+              <li>Sorting specimens and organizing collected material;</li>
+              <li>Taxonomic and genetic analysis;</li>
+              <li>Assisting in field research.</li>
+            </ul>
+          </div>
+          
+          <!-- Intern in Botany -->
+          <button class="accordion">Intern in Botany (2016/1)</button>
+          <div class="panel">
+            <p><em>PUCRS Museum of Science and Technology</em></p>
+            <p>Specimen curation, taxonomic classification, and development of educational materials.</p>
+            <ul>
+              <li>Mounting, recording, and inserting herbarium specimens;</li>
+              <li>Updating the collection's database;</li>
+              <li>Educational activities.</li>
+            </ul>
+          </div>
+          
+          <!-- Scientific Research Fellow -->
+          <button class="accordion">Scientific Research Fellow (2012 - 2013)</button>
+          <div class="panel">
+            <p><em>PUCRS Aquatic Ecology Laboratory</em></p>
+            <p>Collection and characterization of suctorian ciliates in freshwater lakes, analysis of bioindicators in eutrophic environments, and assistance in academic research.</p>
+          </div>
+
+          
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            for (var i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+              });
+            }
+          </script>
         <div class="button">
           <button type="action">
             <a href="cv/Analista_LucasChitolina_CV.pdf" title="Download resume">Download resume</a>
