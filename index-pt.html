@@ -409,8 +409,16 @@
           .resume-collapsible {
             margin-top: 2rem;
           }
+          .content-section {
+            display: block; /* Ensures normal block layout */
+            width: 100%; /* Takes up full width */
+            clear: both; /* Ensures the content below doesn't float or get affected */
+          }
         </style>
+        
 
+    <div class="content-section">
+       
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
     
@@ -622,7 +630,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <!-- Your content here, like the collapsible section or other content -->
+  </div>   
 </body>
 
 </html>
