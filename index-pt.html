@@ -332,24 +332,51 @@
             }
           </script>
 
-
-
-
-              
-              <div class="button">
-                <button type="action">
-                  <a href="cv/Analista_LucasChitolina_CV.pdf" title="Baixar currículo">Baixar currículo</a>
-                </button>
-              </div>
-              <div class="button">
-                <button type="action">
-                  <a href="https://github.com/Chitolina/Certificados/tree/main/Certificados" title="Certificados">Certificados</a>
-                </button>
-              </div>
+<!-- botões de download -->
+          <style>
+            .button-container {
+              display: flex;
+              flex-direction: column;
+              gap: 10px; /* Espaçamento entre os botões */
+              margin-top: 20px; /* Distância do parágrafo acima */
+            }
+          
+            .button a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              background: #e8e6e3; /* Cor neutra */
+              color: #333;
+              padding: 12px 18px;
+              border-radius: 8px;
+              font-weight: bold;
+              font-size: 14px;
+              transition: background 0.3s, transform 0.2s;
+              width: 200px; /* Largura fixa para manter alinhado */
+              text-align: center;
+            }
+          
+            .button a:hover {
+              background: #d6d3ce;
+              transform: translateY(-2px);
+            }
+          
+            .button {
+              display: flex;
+              justify-content: center; /* Centraliza os botões na coluna */
+            }
+          </style>
+          
+          <div class="button-container">
+            <div class="button">
+              <a href="cv/Analista_LucasChitolina_CV.pdf" title="Baixar currículo">📄 Baixar Currículo</a>
             </div>
+            <div class="button">
+              <a href="https://github.com/Chitolina/Certificados/tree/main/Certificados" title="Certificados">📜 Certificados</a>
             </div>
-            </div>
-            </section><!-- Fim da Seção de Currículo -->
+          </div>
+          
 
     
         <style>
