@@ -331,7 +331,45 @@
               });
             }
           </script>
-
+          
+              
+              <style>
+            /* Novo container principal */
+            .main-container {
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 20px;
+            }
+          
+            /* Ajuste no content-section */
+            .content-section {
+              width: 100%;
+              max-width: 1200px; /* Largura máxima para melhor leitura */
+              margin: auto;
+              padding: 20px;
+            }
+          
+            /* Ajuste nos botões para responsividade */
+            .download-buttons .button-container {
+              flex-wrap: nowrap;
+              margin: 20px 0;
+            }
+          
+            /* Ajuste de margens nas seções */
+            .section-title h2 {
+              text-align: center;
+              margin-bottom: 30px;
+            }
+          
+            /* Ajuste no footer */
+            #footer {
+              margin-top: auto;
+              width: 100%;
+            }
+          </style>
           <div class="download-buttons">
             <style>
               .download-buttons .button-container {
