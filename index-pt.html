@@ -411,8 +411,12 @@
           }
           .content-section {
             display: block; /* Ensures normal block layout */
-            width: 100%; /* Takes up full width */
-            clear: both; /* Ensures the content below doesn't float or get affected */
+            width: 100%; 
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            flex-wrap: wrap;
+            justify-content: space-between;
           }
         </style>
         
