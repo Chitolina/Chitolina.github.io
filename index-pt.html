@@ -181,35 +181,57 @@
     </section><!-- End Skills Section -->
     
     <!-- Estilos Modernos e Transparentes -->
-    <style>
-        .progress-bar-wrap {
-          background: rgba(200, 200, 200, 0.1); /* Fundo bem mais sutil e transparente */
+        <style>
+        /* ======= Skills Section ======= */
+        #skills .progress-bar-wrap {
+          background: rgba(200, 200, 200, 0.1); /* Fundo muito suave e transparente */
           border-radius: 20px;
           overflow: hidden;
         }
-        
-        .progress-bar {
+      
+        #skills .progress-bar {
           height: 8px;
           border-radius: 20px;
           transition: width 1s ease-in-out;
         }
-        
-        .gradient-bar {
-          background: linear-gradient(90deg, rgba(100, 100, 255, 0.3), rgba(100, 100, 255, 0.8)); /* Gradiente mais sutil com opacidade crescente */
+      
+        /* Gradiente suave e delicado */
+        #skills .progress-bar {
+          background: linear-gradient(90deg, rgba(100, 200, 255, 0.4), rgba(100, 150, 255, 0.6)); /* Gradiente com cores mais claras e sutis */
         }
-        
-        .skill {
+      
+        #skills .skill {
           font-weight: 600;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          margin-bottom: 10px;
         }
-        
-        .val {
+      
+        #skills .val {
           font-size: 0.9em;
-          color: #666; /* Cor mais neutra para o nível de habilidade */
+          color: #888; /* Cor neutra e delicada para o nível de habilidade */
         }
-    </style>
+      
+        #skills .section-title h2 {
+          color: #333; /* Cor escura suave para o título */
+        }
+      
+        #skills .section-title p {
+          color: #666; /* Texto suave */
+        }
+      
+        /* Focando em deixar o fundo suave e não agressivo */
+        #skills .row.skills-content {
+          margin-top: 30px;
+        }
+      
+        /* Adicionando um efeito suave ao hover das habilidades */
+        #skills .progress:hover .progress-bar {
+          background: linear-gradient(90deg, rgba(100, 200, 255, 0.5), rgba(100, 150, 255, 0.7)); /* Pequeno ajuste no gradiente ao passar o mouse */
+        }
+      </style>
+
 
 
     <!-- ======= Resume Section ======= -->
