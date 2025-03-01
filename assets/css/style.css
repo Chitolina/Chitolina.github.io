@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #dde0e2;
+  color: #505050;
 }
 #hero p {
   color: #dde0e2;
@@ -315,18 +315,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 #hero .social-links {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 34px;
   display: inline-block;
   color: #2795df;;
   line-height: 1;
-  margin-right: 20px;
+  margin-right: 25px;
   transition: 0.3s;
 }
 #hero .social-links a:hover {
-  color: #eeeaeb;
+  color: #505050;
 }
 @media (max-width: 992px) {
   #hero {
