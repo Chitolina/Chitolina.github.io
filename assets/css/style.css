@@ -416,7 +416,7 @@ section {
 }
 .about .content p {
   font-family: 'Arial', sans-serif; /* Escolha a fonte desejada */
-  font-size: 14px; /* Deixa o texto menor e mais refinado */
+  font-size: 16px; /* Deixa o texto menor e mais refinado */
   line-height: 1.5; /* Mantém a legibilidade confortável */
   color: #444; /* Um tom suave para melhor leitura */
 }
