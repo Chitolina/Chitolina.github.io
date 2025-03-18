@@ -414,11 +414,8 @@ section {
   color: #0563bb;
   line-height: 0;
 }
-.about .content p {
-  font-family: 'Arial', sans-serif; /* Escolha a fonte desejada */
-  font-size: 16px; /* Deixa o texto menor e mais refinado */
-  line-height: 1.5; /* Mantém a legibilidade confortável */
-  color: #444; /* Um tom suave para melhor leitura */
+.about .content p:last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
